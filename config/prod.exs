@@ -14,7 +14,7 @@ import Config
 #config :mtgweb, MtgwebWeb.Endpoint, cache_static_manifest: "priv/static/cache_manifest.json"
 config :mtgweb, MtgwebWeb.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [scheme: "https", host: "fix.modernwineclub.com", port: 443],
+  url: [scheme: "https", host: "test.mtg-consulting.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/cache_manifest.json",
   check_origin: ["https://test.mtg-consulting.com","https://mtgweb.fly.dev" ]
