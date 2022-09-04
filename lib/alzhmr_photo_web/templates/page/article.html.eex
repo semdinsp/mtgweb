@@ -1,4 +1,4 @@
-<%= live_patch to: Routes.live_path(@socket, AlzhmrPhotoWeb.ShowArticleLive, @article.id, @article.slug), class: "column is-one-quarter article-list__article" do %>
+<%= live_patch to: Routes.live_path(@socket, MtgwebWeb.ShowArticleLive, @article.id, @article.slug), class: "column is-one-quarter article-list__article" do %>
     <<!-- This example requires Tailwind CSS v2.0+ -->
 <div class="relative bg-white overflow-hidden">
   <div class="max-w-7xl mx-auto">

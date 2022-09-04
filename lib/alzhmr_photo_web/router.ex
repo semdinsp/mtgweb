@@ -1,11 +1,11 @@
-defmodule AlzhmrPhotoWeb.Router do
-  use AlzhmrPhotoWeb, :router
+defmodule MtgwebWeb.Router do
+  use MtgwebWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
     plug :fetch_live_flash
-    plug :put_root_layout, {AlzhmrPhotoWeb.LayoutView, :root}
+    plug :put_root_layout, {MtgwebWeb.LayoutView, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
   end
@@ -14,7 +14,7 @@ defmodule AlzhmrPhotoWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", AlzhmrPhotoWeb do
+  scope "/", MtgwebWeb do
     pipe_through :browser
     live "/", PageLive
     live "/articles", ArticlesLive
@@ -25,7 +25,7 @@ defmodule AlzhmrPhotoWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", AlzhmrPhotoWeb do
+  # scope "/api", MtgwebWeb do
   #   pipe_through :api
   # end
 
@@ -42,7 +42,7 @@ defmodule AlzhmrPhotoWeb.Router do
     scope "/" do
       pipe_through :browser
 
-      live_dashboard "/dashboard", metrics: AlzhmrPhotoWeb.Telemetry
+      live_dashboard "/dashboard", metrics: MtgwebWeb.Telemetry
     end
   end
 

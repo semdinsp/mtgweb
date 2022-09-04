@@ -1,7 +1,7 @@
-defmodule AlzhmrPhotoWeb.LiveEncoder do
+defmodule MtgwebWeb.LiveEncoder do
   @moduledoc false
 
-  alias AlzhmrPhoto.{Article, Content}
+  alias Mtgweb.{Article, Content}
 
   def contents(items) when is_list(items) do
     {features, rest} =

@@ -1,4 +1,4 @@
-defmodule AlzhmrPhotoWeb.ErrorHelpers do
+defmodule MtgwebWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -39,9 +39,9 @@ defmodule AlzhmrPhotoWeb.ErrorHelpers do
     # should be written to the errors.po file. The :count option is
     # set by Ecto and indicates we should also apply plural rules.
     if count = opts[:count] do
-      Gettext.dngettext(AlzhmrPhotoWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(MtgwebWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(AlzhmrPhotoWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(MtgwebWeb.Gettext, "errors", msg, opts)
     end
   end
 end

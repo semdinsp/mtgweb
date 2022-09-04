@@ -1,5 +1,5 @@
-# SCOTT defmodule AlzhmrPhoto.Repo do
+# SCOTT defmodule Mtgweb.Repo do
   # SCOTT use Ecto.Repo,
-  #   otp_app: :alzhmr_photo,
+  #   otp_app: :mtgweb,
   #  adapter: Ecto.Adapters.Postgres
 #SCOTT end

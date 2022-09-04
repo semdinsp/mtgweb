@@ -1,3 +1,3 @@
-defmodule AlzhmrPhotoWeb.PageView do
-  use AlzhmrPhotoWeb, :view
+defmodule MtgwebWeb.PageView do
+  use MtgwebWeb, :view
 end

@@ -1,11 +1,11 @@
-defmodule AlzhmrPhotoWeb.ShowArticleLive do
-  use AlzhmrPhotoWeb, :live_view
+defmodule MtgwebWeb.ShowArticleLive do
+  use MtgwebWeb, :live_view
 
   @topic "articles"
 
   @impl  Phoenix.LiveView
   def mount(%{"id" => id}, _session, socket) do
-    AlzhmrPhotoWeb.Endpoint.subscribe(@topic)
+    MtgwebWeb.Endpoint.subscribe(@topic)
 
     {:ok, assign_socket(socket, id)}
   end
@@ -20,7 +20,7 @@ defmodule AlzhmrPhotoWeb.ShowArticleLive do
   defp assign_socket(socket, id) do
     IO.puts "scott look here"
     IO.inspect(id)
-    case AlzhmrPhoto.get_article(id) do
+    case Mtgweb.get_article(id) do
 
       {:ok, article} ->
         socket

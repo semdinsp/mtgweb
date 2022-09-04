@@ -1,13 +1,13 @@
-defmodule AlzhmrPhotoWeb.ArticlesLive do
-  use AlzhmrPhotoWeb, :live_view
+defmodule MtgwebWeb.ArticlesLive do
+  use MtgwebWeb, :live_view
 
-  alias AlzhmrPhotoWeb.LiveEncoder
+  alias MtgwebWeb.LiveEncoder
 
   @topic "articles"
 
   @impl  Phoenix.LiveView
   def mount(_params, _session, socket) do
-    AlzhmrPhotoWeb.Endpoint.subscribe(@topic)
+    MtgwebWeb.Endpoint.subscribe(@topic)
 
     {:ok, assign_socket(socket), temporary_assigns: [articles: []]}
   end
@@ -18,7 +18,7 @@ defmodule AlzhmrPhotoWeb.ArticlesLive do
   end
 
   def render_article(socket, %{id: _id, slug: _slug} = article,counter ) do
-    Phoenix.View.render(AlzhmrPhotoWeb.PageView, "article.html", socket: socket, article: article , counter: counter)
+    Phoenix.View.render(MtgwebWeb.PageView, "article.html", socket: socket, article: article , counter: counter)
   end
 
   defp assign_socket(socket) do
@@ -38,7 +38,7 @@ defmodule AlzhmrPhotoWeb.ArticlesLive do
   end
 
   defp fetch_articles do
-    with {:ok, articles} <- AlzhmrPhoto.articles() do
+    with {:ok, articles} <- Mtgweb.articles() do
       articles
       |> Enum.sort_by(& &1.published_at)
       |> LiveEncoder.articles()

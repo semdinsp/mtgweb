@@ -1,11 +1,11 @@
-defmodule AlzhmrPhoto.AirtableRepo.Cache.Synchronizer do
+defmodule Mtgweb.AirtableRepo.Cache.Synchronizer do
   @moduledoc """
   Syncs periodically the cache with Airtable
   """
 
   require Logger
 
-  alias AlzhmrPhoto.AirtableRepo.Cache
+  alias Mtgweb.AirtableRepo.Cache
 
   use GenServer
 

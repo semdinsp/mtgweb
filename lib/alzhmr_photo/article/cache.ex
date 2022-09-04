@@ -1,9 +1,9 @@
-defmodule AlzhmrPhoto.Article.Cache do
+defmodule Mtgweb.Article.Cache do
   @moduledoc """
   Article cache
   """
 
-  alias AlzhmrPhoto.{AirtableRepo, AirtableRepo.Cache}
+  alias Mtgweb.{AirtableRepo, AirtableRepo.Cache}
 
   @behaviour Cache
 

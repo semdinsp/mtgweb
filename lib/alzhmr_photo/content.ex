@@ -1,4 +1,4 @@
-defmodule AlzhmrPhoto.Content do
+defmodule Mtgweb.Content do
   alias __MODULE__
 
   @type t :: %Content{

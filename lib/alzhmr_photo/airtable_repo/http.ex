@@ -1,8 +1,8 @@
-defmodule AlzhmrPhoto.AirtableRepo.Http do
+defmodule Mtgweb.AirtableRepo.Http do
   @moduledoc false
 
   alias __MODULE__.Decoder
-  alias AlzhmrPhoto.{Article, Content, AirtableRepo}
+  alias Mtgweb.{Article, Content, AirtableRepo}
   alias Services.Airtable
 
   @behaviour AirtableRepo

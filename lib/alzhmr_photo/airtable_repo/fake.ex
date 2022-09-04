@@ -1,7 +1,7 @@
-defmodule AlzhmrPhoto.Repo.Fake do
+defmodule Mtgweb.Repo.Fake do
   @moduledoc false
 
-  alias AlzhmrPhoto.{Article, Content, AirtableRepo}
+  alias Mtgweb.{Article, Content, AirtableRepo}
 
   @behaviour AirtableRepo
 
@@ -9,7 +9,7 @@ defmodule AlzhmrPhoto.Repo.Fake do
   def all(Content) do
     {:ok,
      [
-       %AlzhmrPhoto.Content{
+       %Mtgweb.Content{
          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
          id: "contents-1",
          image:
@@ -19,7 +19,7 @@ defmodule AlzhmrPhoto.Repo.Fake do
          title: "Feature 5",
          type: "feature"
        },
-       %AlzhmrPhoto.Content{
+       %Mtgweb.Content{
          content:
            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas.",
          id: "contents-2",
@@ -37,7 +37,7 @@ defmodule AlzhmrPhoto.Repo.Fake do
     {:ok,
      [
        %Article{
-         author: "author-1@AlzhmrPhoto.com",
+         author: "author-1@Mtgweb.com",
          content:
            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas.\n",
          description:
@@ -50,7 +50,7 @@ defmodule AlzhmrPhoto.Repo.Fake do
          title: "Lorem ipsum dolor sit amet"
        },
        %Article{
-         author: "author-1@AlzhmrPhoto.com",
+         author: "author-1@Mtgweb.com",
          content:
            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas.\n",
          description:

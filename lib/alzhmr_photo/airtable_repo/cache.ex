@@ -1,4 +1,4 @@
-defmodule AlzhmrPhoto.AirtableRepo.Cache do
+defmodule Mtgweb.AirtableRepo.Cache do
   @moduledoc """
   Cache module for the repo
   """
@@ -75,7 +75,7 @@ defmodule AlzhmrPhoto.AirtableRepo.Cache do
       Logger.info("#{name}.set_all setting new items and broadcasting")
 
       Enum.each(items, &:ets.insert(table_for(name), {&1.id, &1}))
-      AlzhmrPhotoWeb.Endpoint.broadcast(apply(name, :topic, []), "update", %{})
+      MtgwebWeb.Endpoint.broadcast(apply(name, :topic, []), "update", %{})
     end
 
     {:noreply, %{state | hash: new_hash}}
@@ -86,7 +86,7 @@ defmodule AlzhmrPhoto.AirtableRepo.Cache do
     |> table_for()
     |> :ets.insert({id, item})
 
-    AlzhmrPhotoWeb.Endpoint.broadcast(apply(name, :topic, []), "update", %{})
+    MtgwebWeb.Endpoint.broadcast(apply(name, :topic, []), "update", %{})
 
     {:noreply, state}
   end

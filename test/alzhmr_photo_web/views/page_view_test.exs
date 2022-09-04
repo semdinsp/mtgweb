@@ -1,3 +1,3 @@
-defmodule AlzhmrPhotoWeb.PageViewTest do
-  use AlzhmrPhotoWeb.ConnCase, async: true
+defmodule MtgwebWeb.PageViewTest do
+  use MtgwebWeb.ConnCase, async: true
 end

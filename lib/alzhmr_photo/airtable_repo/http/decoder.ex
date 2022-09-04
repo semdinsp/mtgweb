@@ -1,7 +1,7 @@
-defmodule AlzhmrPhoto.AirtableRepo.Http.Decoder do
+defmodule Mtgweb.AirtableRepo.Http.Decoder do
   @moduledoc false
 
-  alias AlzhmrPhoto.{Article, Content}
+  alias Mtgweb.{Article, Content}
 
   def decode(response) when is_list(response) do
     Enum.map(response, &decode/1)

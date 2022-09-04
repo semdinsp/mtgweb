@@ -1,13 +1,13 @@
-defmodule AlzhmrPhotoWeb.PageLive do
-  use AlzhmrPhotoWeb, :live_view
+defmodule MtgwebWeb.PageLive do
+  use MtgwebWeb, :live_view
 
-  alias AlzhmrPhotoWeb.LiveEncoder
+  alias MtgwebWeb.LiveEncoder
 
   @topic "contents"
 
   @impl  Phoenix.LiveView
   def mount(_params, _session, socket) do
-    AlzhmrPhotoWeb.Endpoint.subscribe(@topic)
+    MtgwebWeb.Endpoint.subscribe(@topic)
 
     {:ok, assign_socket(socket), temporary_assigns: [contents: []]}
   end
@@ -19,15 +19,15 @@ defmodule AlzhmrPhotoWeb.PageLive do
 
   def render_section(%{type: "hero"} = content) do
   #  IO.inspect(label: "hero", content: content)
-    Phoenix.View.render(AlzhmrPhotoWeb.PageView, "hero.html", content: content)
+    Phoenix.View.render(MtgwebWeb.PageView, "hero.html", content: content)
   end
 
   def render_section(%{type: "text_and_image"} = content) do
-    Phoenix.View.render(AlzhmrPhotoWeb.PageView, "text_and_image.html", content: content)
+    Phoenix.View.render(MtgwebWeb.PageView, "text_and_image.html", content: content)
   end
 
   def render_section(%{features: content}) do
-    Phoenix.View.render(AlzhmrPhotoWeb.PageView, "features.html", content: content)
+    Phoenix.View.render(MtgwebWeb.PageView, "features.html", content: content)
   end
 
   def render_section(_), do: ""
@@ -49,7 +49,7 @@ defmodule AlzhmrPhotoWeb.PageLive do
   end
 
   defp fetch_contents do
-    with {:ok, contents} <- AlzhmrPhoto.contents() do
+    with {:ok, contents} <- Mtgweb.contents() do
       contents =
         contents
         |> Enum.sort_by(& &1.position)

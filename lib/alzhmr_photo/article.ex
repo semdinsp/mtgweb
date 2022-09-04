@@ -1,5 +1,5 @@
 # article cms
-defmodule AlzhmrPhoto.Article do
+defmodule Mtgweb.Article do
   alias __MODULE__
 
   @type t :: %Article{

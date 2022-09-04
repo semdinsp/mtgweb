@@ -1,5 +1,5 @@
-defmodule AlzhmrPhotoWeb.PageController do
-  use AlzhmrPhotoWeb, :controller
+defmodule MtgwebWeb.PageController do
+  use MtgwebWeb, :controller
 
   def index(conn, _params) do
     render(conn, "index.html")

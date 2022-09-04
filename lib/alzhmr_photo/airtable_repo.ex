@@ -1,15 +1,15 @@
-defmodule AlzhmrPhoto.AirtableRepo do
+defmodule Mtgweb.AirtableRepo do
   @moduledoc false
 
   alias __MODULE__.Cache
-  alias AlzhmrPhoto.{Article, Content}
+  alias Mtgweb.{Article, Content}
 
   @type entity_types :: Article.t() | Content.t()
 
   @callback all(Article | Content ) :: {:ok, [entity_types]} | {:error, term}
   @callback get(Article | Content , String.t()) :: {:ok, entity_types} | {:error, term}
 
-  @adapter Application.get_env(:alzhmr_photo, __MODULE__)[:adapter]
+  @adapter Application.get_env(:mtgweb, __MODULE__)[:adapter]
 
   @spec articles(boolean) :: {:ok, [Article.t()]} | {:error, term}
   def articles(skip_cache \\ false)
@@ -44,7 +44,7 @@ defmodule AlzhmrPhoto.AirtableRepo do
     end
   end
 
-  defp cache_for(Article), do: AlzhmrPhoto.Article.Cache
-  defp cache_for(Content), do: AlzhmrPhoto.Content.Cache
+  defp cache_for(Article), do: Mtgweb.Article.Cache
+  defp cache_for(Content), do: Mtgweb.Content.Cache
 
 end

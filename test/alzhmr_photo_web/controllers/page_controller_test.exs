@@ -1,5 +1,5 @@
-defmodule AlzhmrPhotoWeb.PageControllerTest do
-  use AlzhmrPhotoWeb.ConnCase
+defmodule MtgwebWeb.PageControllerTest do
+  use MtgwebWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get(conn, "/")

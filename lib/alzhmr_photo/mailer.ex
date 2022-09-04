@@ -1,4 +1,4 @@
-defmodule AlzhmrPhoto.Mailer do
+defmodule Mtgweb.Mailer do
    @moduledoc false
-  use Swoosh.Mailer, otp_app: :alzhmr_photo
+  use Swoosh.Mailer, otp_app: :mtgweb
 end

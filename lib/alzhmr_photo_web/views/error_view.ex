@@ -1,5 +1,5 @@
-defmodule AlzhmrPhotoWeb.ErrorView do
-  use AlzhmrPhotoWeb, :view
+defmodule MtgwebWeb.ErrorView do
+  use MtgwebWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.
