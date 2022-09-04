@@ -30,7 +30,7 @@ defmodule MtgwebWeb do
   def view do
     quote do
       use Phoenix.View,
-        root: "lib/alzhmr_photo_web/templates",
+        root: "lib/mtgweb_web/templates",
         namespace: MtgwebWeb
 
       # Import convenience functions from controllers

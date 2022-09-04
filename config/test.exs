@@ -9,7 +9,7 @@ import Config
  # SCOTT username: "postgres",
  # SCOTT password: "postgres",
  # SCOTT hostname: "localhost",
- # SCOTT database: "alzhmr_photo_test#{System.get_env("MIX_TEST_PARTITION")}",
+ # SCOTT database: "mtgweb_test#{System.get_env("MIX_TEST_PARTITION")}",
  # SCOTT pool: Ecto.Adapters.SQL.Sandbox,
  # SCOTT pool_size: 10
 

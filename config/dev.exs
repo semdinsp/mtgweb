@@ -5,7 +5,7 @@ import Config
 #  username: "postgres",
 #  password: "postgres",
 #  hostname: "localhost",
-#  database: "alzhmr_photo_dev",
+#  database: "mtgweb_dev",
 #  stacktrace: true,
 #  show_sensitive_data_on_connection_error: true,
 #  pool_size: 10
@@ -71,8 +71,8 @@ config :mtgweb, MtgwebWeb.Endpoint,
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/alzhmr_photo_web/(live|views)/.*(ex)$",
-      ~r"lib/alzhmr_photo_web/templates/.*(eex)$"
+      ~r"lib/mtgweb_web/(live|views)/.*(ex)$",
+      ~r"lib/mtgweb_web/templates/.*(eex)$"
     ]
   ]
 

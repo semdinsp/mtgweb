@@ -6,7 +6,7 @@ defmodule MtgwebWeb.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   @session_options [
     store: :cookie,
-    key: "_alzhmr_photo_key",
+    key: "_mtgweb_session_key",
     signing_salt: "0pSYJezX"
   ]
 
