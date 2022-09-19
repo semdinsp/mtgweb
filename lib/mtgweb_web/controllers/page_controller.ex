@@ -12,6 +12,11 @@ defmodule MtgwebWeb.PageController do
   def team(conn, _params) do
     render(conn, "team.html")
   end
+
+  def bio(conn, _params) do
+    # mike's bio
+    render(conn, "bio.html")
+  end
   def contact(conn, _params) do
     render(conn, "contact.html")
   end
