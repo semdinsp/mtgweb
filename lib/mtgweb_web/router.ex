@@ -23,7 +23,7 @@ defmodule MtgwebWeb.Router do
     get "/pricing", PageController, :pricing
     get "/contact", PageController, :contact
     get "/team", PageController, :team
-
+    get "/bio", PageController, :bio
 
     # SCOTT get "/", PageController, :index
   end
