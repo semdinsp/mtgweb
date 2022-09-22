@@ -1,40 +1,41 @@
-<%= live_patch to: Routes.live_path(@socket, MtgwebWeb.ShowArticleLive, @article.id, @article.slug), class: "column is-one-quarter article-list__article" do %>
-    <<!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative bg-white overflow-hidden">
-  <div class="max-w-7xl mx-auto">
-    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-
-
-
-
-
-      <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-        <div class="w-4/5 ">
-           <img class="article__image" src="<%= @article.image %>">
-         </div>
-
-        <div class="w-1/5 sm:text-center lg:text-left">
-         <!-- <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-            <span class="block xl:inline">Data to enrich your</span>
-            <span class="block text-indigo-600 xl:inline">online business</span>
-          </h1> -->
-
-          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-            <div class="rounded-md shadow">
-              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"> <%= @article.title %> </a>
-            </div>
+<div class='w-full flex md:flex flex-row'>
+  <%= live_patch to: Routes.live_path(@socket, MtgwebWeb.ShowArticleLive, @article.id, @article.slug), class: "column is-one-quarter article-list__article" do %>
+    <div class="py-4 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div class="flex flex-row gap-8">
+        <article class="p-4 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-between items-center mb-5 text-gray-500">
+            <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                Blog
+            </span>
+            <span class="text-sm">14 days ago</span>
           </div>
-
-          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-            <div class="rounded-md shadow">
-              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"> <%= @article.content %> </a>
-            </div>
+          <div class="max-w-sm rounded-lg border border-gray-200 shadow-md">
+            <img class="w-full m-auto rounded shadow h-[254px]" alt="blog cover" src="<%= @article.image %>">
+            </img>
           </div>
-        </div>
-      </main>
+          <h2 class="mb-2 mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <a href="#">
+              <%= @article.title %>
+            </a>
+          </h2>
+          <p class="mb-5 font-light text-gray-500 h-[96px]">
+            <%= @article.description %>
+          </p>
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Leos avatar" />
+              <span class="font-medium dark:text-white">
+                Roman
+              </span>
+            </div>
+            <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+              Read more
+              <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+          </div>
+        </article>
+      </div>
     </div>
-  </div>
-
+  <% end %>
 </div>
-
-<% end %>
