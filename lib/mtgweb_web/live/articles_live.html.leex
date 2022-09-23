@@ -1,8 +1,11 @@
 <%= if @articles  do %>
   <section class="section">
     <div class="container">
-      <header class="mb-6"><h2 class="title">slug: </h2></header>
-      <div class="columns is-multiline">
+      <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+          <h2 class="mt-8 mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Our Blog</h2>
+          <p class="font-light text-gray-500 sm:text-xl">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
+      </div> 
+      <div class="columns is-multiline flex md:flex-row flex-col">
         <%= for {article, counter } <- Enum.with_index(@articles)  , do: render_article(@socket, article, counter ) %>
       </div>
     </div>
