@@ -19,7 +19,7 @@
       </figure>
 
       <div class="font-light text-gray-500 text-left text-[20px]">
-        <%= @article.content %>
+        <%= raw(Earmark.as_html!(@article.content)) %>
       </div>
 
     </div>
