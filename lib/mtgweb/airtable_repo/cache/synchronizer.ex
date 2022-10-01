@@ -9,7 +9,7 @@ defmodule Mtgweb.AirtableRepo.Cache.Synchronizer do
 
   use GenServer
 
-  @refresh_time :timer.seconds(60)  # scott was 1
+  @refresh_time :timer.seconds(20)  # scott was 1
 
   def start_link(opts) do
     GenServer.start_link(__MODULE__, opts)
