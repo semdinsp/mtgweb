@@ -27,6 +27,7 @@ defmodule MtgwebWeb.PageLive do
   end
 
   def render_section(%{features: content}) do
+    IO.inspect(label: "features", content: content)
     Phoenix.View.render(MtgwebWeb.PageView, "features.html", content: content)
   end
 
@@ -36,13 +37,13 @@ defmodule MtgwebWeb.PageLive do
     case fetch_contents() do
       {:ok, contents} ->
         socket
-        |> assign(:page_title, "Home")
+        |> assign(:page_title, "MTG Consulting")
         |> assign(:contents, contents)
         |> put_flash(:error, nil)
 
       _ ->
         socket
-        |> assign(:page_title, "Home")
+        |> assign(:page_title, "Error")
         |> assign(:contents, nil)
         |> put_flash(:error, "Error fetching data")
     end

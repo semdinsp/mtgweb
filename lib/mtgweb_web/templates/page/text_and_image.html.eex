@@ -1,3 +1,5 @@
+
+<%= if false do %>
 <div class="container text-and-image">
   <div class="columns is-variable is-mobile is-8">
     <div class="column is-half">
@@ -11,3 +13,4 @@
     </div>
   </div>
 </div>
+<% end %>
