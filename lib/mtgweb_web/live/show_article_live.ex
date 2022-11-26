@@ -18,8 +18,7 @@ defmodule MtgwebWeb.ShowArticleLive do
   end
 
   defp assign_socket(socket, id) do
-    IO.puts "scott look here"
-    IO.inspect(id)
+
     case Mtgweb.get_article(id) do
 
       {:ok, article} ->

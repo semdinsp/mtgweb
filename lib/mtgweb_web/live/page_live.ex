@@ -27,7 +27,7 @@ defmodule MtgwebWeb.PageLive do
   end
 
   def render_section(%{features: content}) do
-    IO.inspect(label: "features", content: content)
+   # IO.inspect(label: "features", content: content)
     Phoenix.View.render(MtgwebWeb.PageView, "features.html", content: content)
   end
 
