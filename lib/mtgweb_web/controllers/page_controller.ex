@@ -29,4 +29,8 @@ defmodule MtgwebWeb.PageController do
   def contactpricing(conn, _params) do
     render(conn, "contactpricing.html")
   end
+
+  def contactconsult(conn, _params) do
+    render(conn, "contactconsult.html")
+  end
 end
