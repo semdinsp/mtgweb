@@ -22,6 +22,7 @@ defmodule MtgwebWeb.Router do
     live "/articles/:id/:slug", ShowArticleLive
     get "/pricing", PageController, :pricing
     get "/contact", PageController, :contact
+    get "/contactpricing", PageController, :contact
     get "/team", PageController, :team
     get "/bio", PageController, :bio
     get "/terms", PageController, :terms
