@@ -17,7 +17,7 @@ config :mtgweb, MtgwebWeb.Endpoint,
   url: [scheme: "https", host: "mtg-consulting.net", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/cache_manifest.json",
-  check_origin: ["https://test.mtg-consulting.net","https://mtgweb.fly.dev", "https://mtg-consulting.net" ,"https://www.mtg-consulting.net" ]
+  check_origin: ["https://mtgweb.fly.dev", "https://mtg-consulting.net" ,"https://www.mtg-consulting.net" ]
 
 
 # Do not print debug messages in production
