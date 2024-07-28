@@ -74,9 +74,9 @@ config :tailwind,
 
 # scott airtable keys
 config :mtgweb, Services.Airtable,
-  api_key: "keyN7kPZVO7gOoIS4",
   base_id: "app62gxxiDB84TQSp",
-  api_url: "https://api.airtable.com/v0/"
+  api_url: "https://api.airtable.com/v0/",
+  personal_access_token: "patkNHYbXLNH3BByc.7dce0b8a1bf49208f8a82fc8b7f7c99a2c982b2e89d7457cc3522d0d98f44286"
 
   config :mtgweb, Mtgweb.AirtableRepo, adapter: Mtgweb.AirtableRepo.Http
 
