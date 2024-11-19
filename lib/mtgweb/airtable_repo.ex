@@ -9,7 +9,9 @@ defmodule Mtgweb.AirtableRepo do
   @callback all(Article | Content ) :: {:ok, [entity_types]} | {:error, term}
   @callback get(Article | Content , String.t()) :: {:ok, entity_types} | {:error, term}
 
-  @adapter Application.get_env(:mtgweb, __MODULE__)[:adapter]
+ # update deprecated @adapter Application.get_env(:mtgweb, __MODULE__)[:adapter]
+  @adapter Application.compile_env(:mtgweb,[__MODULE__, :adapter])
+
 
   @spec articles(boolean) :: {:ok, [Article.t()]} | {:error, term}
   def articles(skip_cache \\ false)

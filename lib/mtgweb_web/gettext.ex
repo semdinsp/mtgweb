@@ -20,5 +20,7 @@ defmodule MtgwebWeb.Gettext do
 
   See the [Gettext Docs](https://hexdocs.pm/gettext) for detailed usage.
   """
-  use Gettext, otp_app: :mtgweb
+ # use Gettext, otp_app: :mtgweb   DEPRECATED
+  use Gettext.Backend, otp_app: :mtgweb
+
 end
