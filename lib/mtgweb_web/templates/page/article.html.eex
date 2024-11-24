@@ -1,16 +1,18 @@
-<div class='w-full flex md:flex flex-row'>
-  <%= live_patch to: Routes.live_path(@socket, MtgwebWeb.ShowArticleLive, @article.id, @article.slug), class: "column is-one-quarter article-list__article" do %>
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+<div class='w-full  flex  '>
+<!-- <div class='w-full flex md:flex-row columns-1 md:columns-2 '>  -->
+<!-- grid grid-cols-3  -->
+  <%= live_patch to: Routes.live_path(@socket, MtgwebWeb.ShowArticleLive, @article.id, @article.slug), class: "column is-one-half article-list__article" do %>
+    <div class="py-8 px-4  mx-auto max-w-screen-lg lg:py-16 lg:px-6">
       <div class="flex flex-row gap-8">
         <article class="p-6 bg-white rounded-lg border border-blue-200 shadow-md dark:bg-blue-800 dark:border-blue-700 bg-blue-800">
 
-          <div class="flex justify-between items-center mb-5 text-gray-500 text-white">
+         <!--  <div class="flex justify-between items-center mb-5 text-gray-500 text-white">
             <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                 <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
-                <!-- Blog -->
+
             </span>
             <span class="text-sm">14 days ago</span>
-          </div>
+          </div>   -->
 
           <div class="w-full bg-white rounded-lg border border-gray-300 shadow-md">
             <img class="w-[380px] m-auto rounded shadow h-[254px]" alt="blog cover" src="<%= @article.image %>">
