@@ -1,6 +1,6 @@
 defmodule MtgwebWeb.PageController do
   use MtgwebWeb, :controller
-  import MtgwebWeb.Gettext
+  # scottt not needed? import MtgwebWeb.Gettext
   def index(conn, _params) do
     render(conn, "index.html")
   end
