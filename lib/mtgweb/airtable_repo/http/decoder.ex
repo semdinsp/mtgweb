@@ -23,6 +23,7 @@ defmodule Mtgweb.AirtableRepo.Http.Decoder do
       image: decode_image(Map.get(fields, "image")),
       content: Map.get(fields, "content", ""),
       author: Map.get(fields, "author", ""),
+      summary: Map.get(fields, "summary", ""),
       published_at: Date.from_iso8601!(Map.get(fields, "published_at"))
     }
   end

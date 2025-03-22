@@ -46,6 +46,7 @@ defmodule Mtgweb.Repo.Fake do
          image:
            "https://dl.airtable.com/.attachments/b7a0bafdbb46af7fe860ff4e799abf3b/5b2879ef/image-1.jpg",
          published_at: ~D[2020-06-27],
+         summary: "Fred summmary",
          slug: "lorem-ipsum",
          title: "Lorem ipsum dolor sit amet"
        },
@@ -56,6 +57,7 @@ defmodule Mtgweb.Repo.Fake do
          description:
            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas.\n",
          id: "article-2",
+         summary: "George summmary",
          image:
            "https://dl.airtable.com/.attachments/b7a0bafdbb46af7fe860ff4e799abf3b/5b2879ef/image-1.jpg",
          published_at: ~D[2020-06-27],

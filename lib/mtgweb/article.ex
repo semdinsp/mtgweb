@@ -10,8 +10,9 @@ defmodule Mtgweb.Article do
           image: String.t(),
           content: String.t(),
           author: String.t(),
+          summary: String.t(),
           published_at: Date.t()
         }
 
-  defstruct [:id, :slug, :title, :description, :image, :content, :author, :published_at]
+  defstruct [:id, :slug, :title, :description, :image, :content, :author, :summary, :published_at]
 end

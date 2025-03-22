@@ -25,7 +25,7 @@ defmodule MtgwebWeb.LiveEncoder do
   end
 
   def encode(%Article{} = article) do
-    Map.take(article, [:id, :slug, :title, :description,  :image, :author,  :published_at])
+    Map.take(article, [:id, :slug, :title, :description,  :image, :author, :summary, :published_at])
   end
 
 

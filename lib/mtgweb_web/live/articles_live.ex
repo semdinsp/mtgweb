@@ -25,13 +25,13 @@ defmodule MtgwebWeb.ArticlesLive do
     case fetch_articles() do
       {:ok, articles} ->
         socket
-        |> assign(:page_title, "Wine Detail")
+        |> assign(:page_title, "Service Detail")
         |> assign(:articles, articles)
         |> put_flash(:error, nil)
 
       _ ->
         socket
-        |> assign(:page_title, "Wine Detail")
+        |> assign(:page_title, "Service Detail")
         |> assign(:articles, nil)
         |> put_flash(:error, "Error fetching data")
     end
