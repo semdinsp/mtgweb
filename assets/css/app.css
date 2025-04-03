@@ -3,9 +3,13 @@
 /* WAS @import "tailwindcss/base"; 
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";*/
+/* OLD 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;   */
+
+/* SCOTT TAILWIND */
+@import "tailwindcss";
 
 /* custom styles - put after base imports! */
 @import "./default-styles.css";

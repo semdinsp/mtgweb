@@ -62,7 +62,7 @@ config :tesla, adapter: Tesla.Adapter.Hackney
     # ]
 
 config :tailwind,
-  version: "3.1.6",
+  version: "4.0.0",
   default: [
     args: ~w(
       --config=tailwind.config.js

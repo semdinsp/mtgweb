@@ -3,13 +3,27 @@ defmodule MtgwebWeb.PageLive do
 
   alias MtgwebWeb.LiveEncoder
 
+
   @topic "contents"
+
+  @testimonials %{type: "testimonials", content: [
+    %{
+      id: "testimonial_1",
+      type: "testimonial",
+      title: "Testimonial Test",
+      author: "Fred"},
+     %{ id: "benfit", type: "testimonial", title: " Michael Grandinetti is an accountant by profession but he is a great motivator and manager who applies principles of human relations to motivate his employees to be productive. He has a strong intuition which enables him to anticipate and get rid of problems before they exist. He is a great team player. who strongly believes that 'no man is an island'. I listen whenever Mike speaks. ",
+        author: "Ben Fitial" },
+    ]
+    }
 
   @impl  Phoenix.LiveView
   def mount(_params, _session, socket) do
     MtgwebWeb.Endpoint.subscribe(@topic)
 
-    {:ok, assign_socket(socket), temporary_assigns: [contents: []]}
+
+
+    {:ok, assign_socket(socket), temporary_assigns: [contents: [], testimonials: @testimonials]}
   end
 
   @impl  Phoenix.LiveView
@@ -18,7 +32,8 @@ defmodule MtgwebWeb.PageLive do
   end
 
   def render_section(%{type: "hero"} = content) do
-  #  IO.inspect(label: "hero", content: content)
+   # IO.inspect(label: "hero", content: content)
+
     Phoenix.View.render(MtgwebWeb.PageView, "hero.html", content: content)
   end
 
@@ -29,6 +44,13 @@ defmodule MtgwebWeb.PageLive do
   def render_section(%{features: content}) do
    # IO.inspect(label: "features", content: content)
     Phoenix.View.render(MtgwebWeb.PageView, "features.html", content: content)
+  end
+
+
+
+  def render_section(%{type: "testimonials"} = @testimonials) do
+    # IO.inspect(label: "SCOTT DEBUG testimonials", list: @testimonials)
+     Phoenix.View.render(MtgwebWeb.PageView, "testimonial.html", list: @testimonials.content)
   end
 
   def render_section(_), do: ""
@@ -43,7 +65,7 @@ defmodule MtgwebWeb.PageLive do
 
       _ ->
         socket
-        |> assign(:page_title, "Error")
+        |> assign(:page_title, "MTG: Error")
         |> assign(:contents, nil)
         |> put_flash(:error, "Error fetching data")
     end
