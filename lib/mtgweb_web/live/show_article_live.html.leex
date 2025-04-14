@@ -6,8 +6,8 @@
     <div class="flex flex-col text-center p-8">
 
 
-      <h3 class="mt-8 text-2xl  font-semibold  text-balance text-blue-900 sm:text-3xl sm:truncate"><%=@article.title  %></h3>
-      <h4 class="mt-8 text-xl  font-semibold  text-balance text-blue-900 sm:text-xl sm:truncate"><%=@article.summary  %></h4>
+      <h3 class="mt-8 text-2xl  font-semibold  text-balance text-zinc-900 sm:text-3xl sm:truncate"><%=@article.title  %></h3>
+      <h4 class="mt-8 text-xl  font-semibold  text-balance text-zinc-900 sm:text-xl sm:truncate"><%=@article.summary  %></h4>
 
       <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
 
@@ -16,7 +16,7 @@
         <figure class= max-w-[600px] max-h-[400px] image is-256x256 mb-2">
             <img class="w-full h-full" src="<%= @article.image %>">
         </figure>
-        <div class="p-2  text-left text-blue-900 ">
+        <div class="p-2  text-left text-zinc-900 ">
           <%= raw(Earmark.as_html!(@article.content)) %>
         </div>
 
@@ -37,7 +37,7 @@
 <!--  OLD CARD
  <article class="article max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
     <div class="flex flex-col text-center p-8">
-      <h3 class="mt-8 text-2xl  font-semibold  text-balance text-blue-900 sm:text-3xl sm:truncate"><%=@article.title  %></h3>
+      <h3 class="mt-8 text-2xl  font-semibold  text-balance text-zinc-900 sm:text-3xl sm:truncate"><%=@article.title  %></h3>
 
       <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
         <div class="mt-2 mb-8 flex items-center text-sm text-gray-500">
@@ -51,7 +51,7 @@
         <figure class= max-w-[600px] max-h-[400px] image is-256x256 mb-2">
             <img class="w-full h-full" src="<%= @article.image %>">
         </figure>
-        <div class="p-2  text-left text-blue-900 ">
+        <div class="p-2  text-left text-zinc-900 ">
           <%= raw(Earmark.as_html!(@article.content)) %>
         </div>
       </div>
@@ -69,7 +69,7 @@ NEW CARD
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
         </a>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-zinc-700 rounded-lg hover:bg-zinc-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-zinc-600 dark:hover:bg-zinc-700 dark:focus:ring-blue-800">
             Read more
              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -85,7 +85,7 @@ OLD CARD
     <div class="flex flex-col text-center p-8">
 
 
-      <h3 class="mt-8 text-2xl  font-semibold  text-balance text-blue-900 sm:text-3xl sm:truncate"><%=@article.title  %></h3>
+      <h3 class="mt-8 text-2xl  font-semibold  text-balance text-zinc-900 sm:text-3xl sm:truncate"><%=@article.title  %></h3>
 
       <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
         <div class="mt-2 mb-8 flex items-center text-sm text-gray-500">
@@ -99,7 +99,7 @@ OLD CARD
         <figure class= max-w-[600px] max-h-[400px] image is-256x256 mb-2">
             <img class="w-full h-full" src="<%= @article.image %>">
         </figure>
-        <div class="p-2  text-left text-blue-900 ">
+        <div class="p-2  text-left text-zinc-900 ">
           <%= raw(Earmark.as_html!(@article.content)) %>
         </div>
       </div>

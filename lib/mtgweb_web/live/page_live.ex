@@ -8,12 +8,13 @@ defmodule MtgwebWeb.PageLive do
 
   @testimonials %{type: "testimonials", content: [
     %{
-      id: "testimonial_1",
+      id: "steve_c",
       type: "testimonial",
-      title: "Testimonial Test",
-      author: "Fred"},
+      title: "As the CEO of a Private Equity firm in the Mariana Islands, Mike increased shareholder value significantly and lead the operations, acquisition and development of several businesses. Ranging from airlines, to golf courses, to hotel and other tourism related businesses, Mike was able to really increase value. And in the telecom sector, ran a Cable TV company that entered the Internet and VOIP markets and exited at a large multiple. He also runs an Italian restaurant that makes amazing food! Well, just reach out if you want to know more. Thanks, Steve",
+      author: "Steve Coleman",
+      position: "COO at Mosaic Solutions"},
      %{ id: "benfit", type: "testimonial", title: " Michael Grandinetti is an accountant by profession but he is a great motivator and manager who applies principles of human relations to motivate his employees to be productive. He has a strong intuition which enables him to anticipate and get rid of problems before they exist. He is a great team player. who strongly believes that 'no man is an island'. I listen whenever Mike speaks. ",
-        author: "Ben Fitial" },
+        author: "Ben Fitial", position: "" },
     ]
     }
 

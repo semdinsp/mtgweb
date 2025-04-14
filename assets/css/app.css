@@ -12,13 +12,13 @@
 @import "tailwindcss";
 
 /* custom styles - put after base imports! */
-@import "./default-styles.css";
+/* scott @import "./default-styles.css";  */
 /* import custom components */
 /* @import "./components/buttonscott.css"; MPT WORKING  DIRECTORY ISSUE? */
 /*  SCOTT TODO @import "./components/buttons.css"; */
 /* default phoenix styles - eventually remove */
 
-@import "./buttonscott2.css";
+/* @import "./buttonscott2.css";  */
 
 
 
@@ -28,7 +28,7 @@
 
 @layer components {
   .btn-scott {
-    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg;
+    @apply py-2 px-4 bg-zinc-500 text-white font-semibold rounded-lg;
   }
 }
 /* Alerts and form errors used by phx.new */

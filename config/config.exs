@@ -31,7 +31,7 @@ config :swoosh, :api_client, false
 
 # Configure esbuild (the version is required)
 config :esbuild,
-  version: "0.14.29",
+  version: "0.25.2",
   default: [
     args:
       ~w(js/app.js --bundle --target=es2017 --outdir=../priv/static/assets --external:/fonts/* --external:/images/*),
@@ -62,15 +62,15 @@ config :tesla, adapter: Tesla.Adapter.Hackney
     # ]
 
 config :tailwind,
-  version: "4.0.0",
-  default: [
-    args: ~w(
-      --config=tailwind.config.js
-      --input=css/app.css
-      --output=../priv/static/assets/app.css
-    ),
-    cd: Path.expand("../assets", __DIR__)
-  ]
+    version: "4.0.0",
+    default: [
+      args: ~w(
+        --config=tailwind.config.js
+        --input=assets/css/app.css
+        --output=priv/static/assets/app.css
+      ),
+      cd: Path.expand("..", __DIR__)
+    ]
 
 # scott airtable keys
 config :mtgweb, Services.Airtable,
