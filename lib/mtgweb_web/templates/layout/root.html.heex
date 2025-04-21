@@ -126,20 +126,20 @@
         </div>
     
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div :class="{'flex': open, 'hidden': !open}" class="md:hidden mobile-menu">
-          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div :class="{'flex': open, 'hidden': !open}" class="md:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pt-2 pb-3">
             <ul>
-              <li>
-                <a href="/articles" class="text-white block px-3 py-2 rounded text-base font-medium" aria-current="page">Our Services</a>
+              <li class="list-none">
+                <a href="/articles" class="block rounded-md px-3 py-2 text-base font-medium text-white" >Our Services</a>
               </li>
-              <li>
-                <a href="/pricing" class="text-white block px-3 py-2 rounded text-base font-medium" aria-current="page">Pricing</a>
+              <li class="list-none">
+                <a href="/pricing" class="block rounded-md px-3 py-2 text-base font-medium text-white">Pricing</a>
               </li>
-              <li>
-                <a href="/team" class="text-white block px-3 py-2 rounded text-base font-medium" aria-current="page">Our team</a>
+              <li class="list-none">
+                <a href="/team" class="block rounded-md px-3 py-2 text-base font-medium text-white" >Our team</a>
               </li>
-              <li>
-                <a href="/contact" class="text-white block px-3 py-2 rounded text-base font-medium" aria-current="page">Contact Us</a>
+              <li class="list-none">
+                <a href="/contact" class="block rounded-md px-3 py-2 text-base font-medium text-white" >Contact Us</a>
               </li>
             </ul>
            </div>
