@@ -16,12 +16,13 @@
           <p>Michael has performed consulting work for our company here in Indonesia as well as our US based LLC in the United States for the past six years and has provided extremely valuable financial advice, planning and overall expertise that has greatly benefited us financially and professionally as a company and individually. I would highly recommend Michael as a knowledgeable and professional person who is a pleasure to work with.  (Michael was responsible for state, provincial and national taxes for a substantial Amazon product sales across US, Canada, Australia and other countries)
           </p>
         </blockquote>
-        <figcaption class="mt-6  items-center gap-x-4 h-9 w-9">
+        <figcaption class="mt-1  items-center gap-x-4 h-15 w-96">
+
          <!-- <img class="w-9 h-9 rounded-full bg-gray-50" height="200" width="200" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80" alt=""> -->
           <div>
-            <div class="font-semibold">Michael J Walsh</div>
-            <div class="text-gray-600">Managing Director / Owner at PT Bali Soap</div>
-            <div class="text-gray-500">10M USD Annual Business</div>
+            <div class="font-semibold text-sm pl-3">Michael J Walsh</div>
+            <div class="text-gray-600 text-sm pl-3">Managing Director / Owner at PT Bali Soap</div>
+            <div class="text-gray-500 text-sm pl-3">10M USD Annual Business</div>
           </div>
           <!-- <img class="h-10 w-auto flex-none" src="https://tailwindcss.com/plus-assets/img/logos/savvycal-logo-gray-900.svg" alt=""> -->
         </figcaption>
@@ -39,11 +40,11 @@
 
         <div class="space-y-8 xl:contents xl:space-y-0">
             <div class="space-y-8 xl:row-span-2">
-                <figure class="rounded-2xl bg-white p-6 ring-1 shadow-lg ring-gray-900/5">
+                <figure class="relative rounded-2xl bg-white p-6 ring-1 shadow-lg ring-gray-900/5">
                     <blockquote class="text-gray-900">
                         <p><%= item.title %></p>
                     </blockquote>
-                    <figcaption class="mt-6  items-center gap-x-4 h-9 w-9">
+                    <figcaption class=" mt-1  items-center gap-x-4 h-9 w-80">
                     <!-- <img class="w-full rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> -->
                     <div>
                         <div class="font-semibold"><%= item.author %></div>
