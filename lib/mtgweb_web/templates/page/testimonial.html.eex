@@ -3,12 +3,12 @@
 
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-base/7 font-semibold text-indigo-600">Testimonials</h2>
-      <p class="mt-2 text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">We have worked with hundreds of amazing people</p>
+      <h2 class="text-base/7 font-semibold text-gray-900">Testimonials</h2>
+      <p class="mt-2 text-2xl font-semibold tracking-tight text-balance text-gray-900 sm:text-3xl">We have worked with hundreds of amazing people</p>
     </div>
   <!-- big quote -->
     <figure class="rounded-2xl bg-white ring-1 shadow-lg ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-        <blockquote class="p-6 text-lg font-semibold tracking-tight text-gray-900 sm:p-12 sm:text-xl/8">
+        <blockquote class="p-6 text-lg  tracking-tight text-gray-900 sm:p-12 sm:text-xl/8">
           <p>Michael has performed consulting work for our company here in Indonesia as well as our US based LLC in the United States for the past six years and has provided extremely valuable financial advice, planning and overall expertise that has greatly benefited us financially and professionally as a company and individually. I would highly recommend Michael as a knowledgeable and professional person who is a pleasure to work with.  (Michael was responsible for state, provincial and national taxes for a substantial Amazon product sales across US, Canada, Australia and other countries)
           </p>
         </blockquote>
