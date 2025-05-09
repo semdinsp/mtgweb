@@ -136,6 +136,11 @@ nav a {
   text-decoration: none;
 }
 
+hr { 
+  border: 0;
+  margin: 5px 0;
+}
+
 nav a button{
   color: white;
   background: transparent;
