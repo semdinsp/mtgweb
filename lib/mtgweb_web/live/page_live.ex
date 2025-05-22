@@ -15,6 +15,8 @@ defmodule MtgwebWeb.PageLive do
       position: "COO at Mosaic Solutions"},
      %{ id: "benfit", type: "testimonial", title: " Michael Grandinetti is an accountant by profession but he is a great motivator and manager who applies principles of human relations to motivate his employees to be productive. He has a strong intuition which enables him to anticipate and get rid of problems before they exist. He is a great team player. who strongly believes that 'no man is an island'. I listen whenever Mike speaks. ",
         author: "Ben Fitial", position: "" },
+     %{ id: "eka", type: "testimonial", title: " MTG Consulting provides a professional accounting service to our company based in Singapore and Timor Leste. We are happy with their service provided commitment and dedication despite of deadline given in short time. Their valued advise on finance record and process are easily to implement for our company. We look forward to work with MTG in long run ",
+        author: "Eka Mardiarti", position: "Owner" },
     ]
     }
 
