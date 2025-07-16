@@ -62,7 +62,11 @@ defmodule MtgwebWeb.PageLive do
     case fetch_contents() do
       {:ok, contents} ->
         socket
-        |> assign(:page_title, "MTG Consulting")
+        |> assign(:page_title, "MTG Consulting - Professional Accounting & CFO Services")
+        |> assign(:meta_description, "Professional accounting, bookkeeping, and CFO services for small to medium businesses. Expert financial management solutions starting at $250/month. Trusted by 100+ companies.")
+        |> assign(:og_title, "MTG Consulting - Professional Accounting & CFO Services")
+        |> assign(:og_description, "Expert accounting, bookkeeping, and CFO services for growing businesses. Trusted by 100+ companies nationwide.")
+        |> assign(:og_url, "https://mtg-consulting.net")
         |> assign(:contents, contents)
         |> put_flash(:error, nil)
 

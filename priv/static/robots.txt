@@ -1,5 +1,21 @@
-# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
-#
-# To ban all spiders from the entire site uncomment the next two lines:
-# User-agent: *
-# Disallow: /
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mtg-consulting.net/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /dev/
+
+# Allow important pages
+Allow: /
+Allow: /pricing
+Allow: /team
+Allow: /articles
+Allow: /contact
+Allow: /terms
+
+# Crawl delay
+Crawl-delay: 1

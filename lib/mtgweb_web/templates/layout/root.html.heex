@@ -5,9 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="csrf-token" content={csrf_token_value()}>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content={assigns[:meta_description] || "Professional accounting, bookkeeping, and CFO services for small to medium businesses. Expert financial management solutions starting at $250/month. Trusted by 100+ companies."}>
+    <meta name="keywords" content="accounting services, bookkeeping, CFO services, financial management, QuickBooks, small business accounting, Portland accountant, fractional CFO">
+    <meta name="author" content="MTG Consulting">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content={assigns[:og_title] || "MTG Consulting - Professional Accounting & CFO Services"}>
+    <meta property="og:description" content={assigns[:og_description] || "Expert accounting, bookkeeping, and CFO services for growing businesses. Trusted by 100+ companies nationwide."}>
+    <meta property="og:image" content="https://mtg-consulting.net/images/mtglogo.jpg">
+    <meta property="og:url" content={assigns[:og_url] || "https://mtg-consulting.net"}>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MTG Consulting">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={assigns[:og_title] || "MTG Consulting - Professional Accounting & CFO Services"}>
+    <meta name="twitter:description" content={assigns[:og_description] || "Expert accounting, bookkeeping, and CFO services for growing businesses."}>
+    <meta name="twitter:image" content="https://mtg-consulting.net/images/mtglogo.jpg">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AccountingService",
+      "name": "MTG Consulting",
+      "description": "Professional accounting, bookkeeping, and CFO services for small to medium businesses",
+      "url": "https://mtg-consulting.net",
+      "telephone": "+1-503-931-4045",
+      "email": "michael@mtg-consulting.net",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Portland",
+        "addressRegion": "OR",
+        "addressCountry": "US"
+      },
+      "serviceArea": "United States",
+      "priceRange": "$250-$995",
+      "founder": {
+        "@type": "Person",
+        "name": "Michael Grandinetti",
+        "jobTitle": "CPA, Managing Partner"
+      },
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Michael Grandinetti",
+          "jobTitle": "CPA, Managing Partner"
+        },
+        {
+          "@type": "Person",
+          "name": "Scott Sproule",
+          "jobTitle": "Technology and Integration Specialist"
+        },
+        {
+          "@type": "Person",
+          "name": "Carmella Sawali",
+          "jobTitle": "CPA, Audit and Accounting"
+        }
+      ],
+      "service": [
+        {
+          "@type": "Service",
+          "name": "Basic Bookkeeping",
+          "description": "Data entry, bank reconciliation and monthly reports",
+          "offers": {
+            "@type": "Offer",
+            "price": "250",
+            "priceCurrency": "USD",
+            "billingIncrement": "P1M"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Enhanced Bookkeeping",
+          "description": "Basic services plus accounts receivable, payable and payroll",
+          "offers": {
+            "@type": "Offer",
+            "price": "500",
+            "priceCurrency": "USD",
+            "billingIncrement": "P1M"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Comprehensive Bookkeeping",
+          "description": "Enhanced services plus financial analysis, tax prep and advisory",
+          "offers": {
+            "@type": "Offer",
+            "price": "995",
+            "priceCurrency": "USD",
+            "billingIncrement": "P1M"
+          }
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "25"
+      }
+    }
+    </script>
+    
     <script defer src="https://unpkg.com/alpinejs@3.14.9/dist/cdn.min.js"></script>
 
-    <%= live_title_tag assigns[:page_title] || "MTG Consulting", suffix: " · Mgmt Accounting" %>
+    <%= live_title_tag assigns[:page_title] || "MTG Consulting - Professional Accounting & CFO Services", suffix: " · Expert Financial Management" %>
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css?v=2")}/>
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

@@ -28,6 +28,9 @@ defmodule MtgwebWeb.Router do
     get "/team", PageController, :team
     get "/bio", PageController, :bio
     get "/terms", PageController, :terms
+    
+    # SEO Routes
+    get "/sitemap.xml", SitemapController, :index
 
     # SCOTT get "/", PageController, :index
   end
