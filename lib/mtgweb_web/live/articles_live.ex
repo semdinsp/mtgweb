@@ -25,13 +25,17 @@ defmodule MtgwebWeb.ArticlesLive do
     case fetch_articles() do
       {:ok, articles} ->
         socket
-        |> assign(:page_title, "Service Detail")
+        |> assign(:page_title, "Small Business Accounting Services | CPA & QuickBooks Solutions")
+        |> assign(:meta_description, "Expert small business accounting services and QuickBooks solutions. CPA-led team providing comprehensive financial management for growing businesses.")
+        |> assign(:og_title, "Small Business Accounting Services | CPA & QuickBooks Solutions")
+        |> assign(:og_description, "Expert small business accounting services and QuickBooks solutions from certified professionals.")
+        |> assign(:og_url, "https://mtg-consulting.net/articles")
         |> assign(:articles, articles)
         |> put_flash(:error, nil)
 
       _ ->
         socket
-        |> assign(:page_title, "Service Detail")
+        |> assign(:page_title, "Small Business Accounting Services | CPA & QuickBooks Solutions")
         |> assign(:articles, nil)
         |> put_flash(:error, "Error fetching data")
     end

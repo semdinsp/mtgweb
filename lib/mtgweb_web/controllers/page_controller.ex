@@ -7,20 +7,20 @@ defmodule MtgwebWeb.PageController do
 
   def pricing(conn, _params) do
     conn
-    |> assign(:page_title, "Pricing - Professional Accounting Services")
-    |> assign(:meta_description, "Transparent pricing for professional accounting, bookkeeping, and CFO services. Plans starting at $250/month. No hidden fees. Get started today.")
-    |> assign(:og_title, "MTG Consulting Pricing - Accounting & CFO Services")
-    |> assign(:og_description, "Professional accounting services with transparent pricing. Basic bookkeeping from $250/month, Enhanced services from $500/month.")
+    |> assign(:page_title, "Small Business Accounting Cost | CPA Services Pricing | QuickBooks")
+    |> assign(:meta_description, "Small business accounting cost from $250/month. Transparent CPA services pricing for QuickBooks consulting, bookkeeping, and CFO services. No hidden fees.")
+    |> assign(:og_title, "Small Business Accounting Cost | CPA Services Pricing")
+    |> assign(:og_description, "Small business accounting cost from $250/month. Transparent CPA services pricing for QuickBooks consulting and bookkeeping.")
     |> assign(:og_url, "https://mtg-consulting.net/pricing")
     |> render("pricing.html")
   end
 
   def team(conn, _params) do
     conn
-    |> assign(:page_title, "Our Team - Expert Accounting Professionals")
-    |> assign(:meta_description, "Meet our expert accounting team. CPA professionals with 20+ years experience in financial management, QuickBooks, and business advisory services.")
-    |> assign(:og_title, "MTG Consulting Team - Expert CPAs & Financial Advisors")
-    |> assign(:og_description, "Our experienced team of CPAs and financial professionals, led by Michael Grandinetti, former Deloitte partner.")
+    |> assign(:page_title, "CPA Team | Small Business QuickBooks Experts | Certified Accountants")
+    |> assign(:meta_description, "Expert CPA team specializing in small business accounting and QuickBooks consulting. Certified accountants with 20+ years experience in financial management.")
+    |> assign(:og_title, "CPA Team | Small Business QuickBooks Experts")
+    |> assign(:og_description, "Expert CPA team specializing in small business accounting and QuickBooks consulting. Led by Michael Grandinetti, former Deloitte partner.")
     |> assign(:og_url, "https://mtg-consulting.net/team")
     |> render("team.html")
   end
@@ -42,10 +42,10 @@ defmodule MtgwebWeb.PageController do
 
   def contact(conn, _params) do
     conn
-    |> assign(:page_title, "Contact Us - Professional Accounting Services")
-    |> assign(:meta_description, "Contact MTG Consulting for professional accounting, bookkeeping, and CFO services. Call (503) 931-4045 or email michael@mtg-consulting.net for a free consultation.")
-    |> assign(:og_title, "Contact MTG Consulting - Professional Accounting Services")
-    |> assign(:og_description, "Get in touch with our accounting professionals for a free consultation. Expert financial management services for your business.")
+    |> assign(:page_title, "Free CPA Consultation | Small Business QuickBooks Help | Contact MTG")
+    |> assign(:meta_description, "Free CPA consultation for small businesses. Get expert QuickBooks help and accounting advice. Call (503) 931-4045 or email for your free consultation today.")
+    |> assign(:og_title, "Free CPA Consultation | Small Business QuickBooks Help")
+    |> assign(:og_description, "Free CPA consultation for small businesses. Get expert QuickBooks help and accounting advice from certified professionals.")
     |> assign(:og_url, "https://mtg-consulting.net/contact")
     |> render("contact.html")
   end
