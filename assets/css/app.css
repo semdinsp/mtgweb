@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 /* SCOTT */
 /* Import tailwind - with postcss-import installed */
 /* WAS @import "tailwindcss/base"; 
@@ -29,6 +32,23 @@
 @layer components {
   .btn-scott {
     @apply py-2 px-4 bg-zinc-500 text-white font-semibold rounded-lg;
+  }
+  
+  /* MTG Custom Components */
+  .mtg-nav-link {
+    @apply text-mtg-white hover:text-mtg-orange transition-colors duration-200 px-3 py-2 rounded-md font-sans;
+  }
+  
+  .mtg-button {
+    @apply bg-mtg-orange text-mtg-white hover:bg-orange-400 px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105;
+  }
+  
+  .mtg-background {
+    @apply bg-mtg-purple text-mtg-white;
+  }
+  
+  .mtg-card {
+    @apply bg-mtg-purple/80 text-mtg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-200;
   }
 }
 /* Alerts and form errors used by phx.new */
@@ -129,10 +149,21 @@
   animation: 0.2s ease-out 0s normal forwards 1 fade-out-keys;
 }
 
-a { color: black}
+/* Global background styling */
+body {
+  background-color: rgb(29, 9, 89) !important;
+  color: rgb(255, 255, 255);
+}
+
+html {
+  background-color: rgb(29, 9, 89) !important;
+}
+
+a { color: white}
+a:hover { color: rgb(255, 127, 8); }
 
 nav a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -142,15 +173,16 @@ hr {
 }
 
 nav a button{
-  color: white;
+  color: rgb(255, 255, 255);
   background: transparent;
   border: transparent;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: zinc-400;
+  color: rgb(255, 127, 8);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 @keyframes fade-in-scale-keys{
