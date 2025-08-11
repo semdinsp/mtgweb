@@ -13,7 +13,7 @@ import Config
 # Configures the endpoint
 config :mtgweb, MtgwebWeb.Endpoint,
   url: [host: "localhost"],
-  render_errors: [view: MtgwebWeb.ErrorView, accepts: ~w(html json), layout: false],
+  render_errors: [formats: [html: MtgwebWeb.ErrorHTML, json: MtgwebWeb.ErrorJSON], layout: false],
   pubsub_server: Mtgweb.PubSub,
   live_view: [signing_salt: "oTMiVvhe"]
 

@@ -1,3 +1,3 @@
 defmodule MtgwebWeb.SitemapView do
-  use MtgwebWeb, :view
+  use MtgwebWeb, :html
 end

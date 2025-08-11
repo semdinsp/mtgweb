@@ -1,5 +1,5 @@
 defmodule MtgwebWeb.PageView do
-  use MtgwebWeb, :view
+  use MtgwebWeb, :html
   #require MtgwebWeb.Gettext
   #import MtgwebWeb.Gettext
   use Gettext, backend: Mtgweb.Gettext

@@ -18,7 +18,8 @@ defmodule MtgwebWeb.ArticlesLive do
   end
 
   def render_article(socket, %{id: _id, slug: _slug} = article,counter ) do
-    Phoenix.View.render(MtgwebWeb.PageView, "article.html", socket: socket, article: article , counter: counter)
+    Phoenix.Template.render_to_iodata(MtgwebWeb.PageHTML, "article", "html", socket: socket, article: article , counter: counter)
+    |> Phoenix.HTML.raw()
   end
 
   defp assign_socket(socket) do

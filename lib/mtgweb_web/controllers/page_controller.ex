@@ -57,4 +57,14 @@ defmodule MtgwebWeb.PageController do
   def contactconsult(conn, _params) do
     render(conn, "contactconsult.html")
   end
+
+  def engagement(conn, _params) do
+    conn
+    |> assign(:page_title, "Engagement Terms | Professional CPA Services Process | MTG Consulting")
+    |> assign(:meta_description, "Simple engagement process and terms for MTG Consulting CPA services. Quality guarantee, flexible billing cycles, and clear requirements discussion process.")
+    |> assign(:og_title, "Engagement Terms | Professional CPA Services Process")
+    |> assign(:og_description, "Learn about our simple engagement process, quality guarantee, and flexible billing options for professional accounting services.")
+    |> assign(:og_url, "https://mtg-consulting.net/engagement")
+    |> render("engagement.html")
+  end
 end

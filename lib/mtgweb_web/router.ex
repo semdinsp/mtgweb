@@ -5,7 +5,7 @@ defmodule MtgwebWeb.Router do
     plug :accepts, ["html"]
     plug :fetch_session
     plug :fetch_live_flash
-    plug :put_root_layout, {MtgwebWeb.LayoutView, :root}
+    plug :put_root_layout, html: {MtgwebWeb.Layouts, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
   end
@@ -28,6 +28,7 @@ defmodule MtgwebWeb.Router do
     get "/team", PageController, :team
     get "/bio", PageController, :bio
     get "/terms", PageController, :terms
+    get "/engagement", PageController, :engagement
     
     # SEO Routes
     get "/sitemap.xml", SitemapController, :index

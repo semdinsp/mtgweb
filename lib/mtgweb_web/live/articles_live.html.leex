@@ -1,15 +1,13 @@
 <%= if @articles  do %>
-  <section class="section">
-    <div class="container">
-      <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-          <h2 class="mt-8 mb-4 text-4xl tracking-tight font-extrabold  text-zinc-900">Our Services</h2>
-          <p class="font-light text-2xl  tracking-tight text-zinc-900 sm:text-xl">We provide full service accounting, cash flow management and management consulting for small and medium businesses..</p>
+  <div class="py-16 lg:py-24" style="background-color: rgb(29, 9, 89);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center space-y-4 mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-white">Our Services</h2>
+          <p class="text-xl text-gray-200 max-w-3xl mx-auto">We provide full service accounting, cash flow management and management consulting for small and medium businesses.</p>
       </div>
-       <!-- original       <div class="columns columns-1 md:columns-2 is-multiline flex md:flex-row flex-col"> -->
-       <!-- worki       <div class="columns is-multiline flex md:flex-row  flex-col">  -->
-      <div class="columns is-multiline flex md:grid md:grid-cols-2  flex-col">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <%= for {article, counter } <- Enum.with_index(@articles)  , do: render_article(@socket, article, counter ) %>
       </div>
     </div>
-  </section>
+  </div>
 <% end %>

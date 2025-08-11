@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="csrf-token" content={get_csrf_token()}>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content={assigns[:meta_description] || "Professional accounting, bookkeeping, and CFO services for small to medium businesses. Expert financial management solutions starting at $250/month. Trusted by 100+ companies."}>
+    <meta name="keywords" content="accounting services, bookkeeping, CFO services, financial management, QuickBooks, small business accounting, Portland accountant, fractional CFO">
+    <meta name="author" content="MTG Consulting">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content={assigns[:og_title] || "MTG Consulting - Professional Accounting & CFO Services"}>
+    <meta property="og:description" content={assigns[:og_description] || "Expert accounting, bookkeeping, and CFO services for growing businesses. Trusted by 100+ companies nationwide."}>
+    <meta property="og:image" content="https://mtg-consulting.net/images/mtglogo.jpg">
+    <meta property="og:url" content={assigns[:og_url] || "https://mtg-consulting.net"}>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MTG Consulting">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={assigns[:og_title] || "MTG Consulting - Professional Accounting & CFO Services"}>
+    <meta name="twitter:description" content={assigns[:og_description] || "Expert accounting, bookkeeping, and CFO services for growing businesses."}>
+    <meta name="twitter:image" content="https://mtg-consulting.net/images/mtglogo.jpg">
+    
+    <%= live_title_tag assigns[:page_title] || "MTG Consulting - Professional Accounting & CFO Services", suffix: " · Expert Financial Management" %>
+    <link phx-track-static rel="stylesheet" href={~p"/assets/app.css?v=2"}/>
+    <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  </head>
+  <body data-theme="mtg" class="font-sans" style="background-color: rgb(29, 9, 89); min-height: 100vh;">
+    <%= @inner_content %>
+    
+    <!-- Simple Footer -->
+    <footer class="bg-purple-900 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p>&copy; 2025 MTG Consulting. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

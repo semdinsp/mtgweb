@@ -37,23 +37,27 @@ defmodule MtgwebWeb.PageLive do
   def render_section(%{type: "hero"} = content) do
    # IO.inspect(label: "hero", content: content)
 
-    Phoenix.View.render(MtgwebWeb.PageView, "hero.html", content: content)
+    Phoenix.Template.render_to_iodata(MtgwebWeb.PageHTML, "hero", "html", content: content)
+    |> Phoenix.HTML.raw()
   end
 
   def render_section(%{type: "text_and_image"} = content) do
-    Phoenix.View.render(MtgwebWeb.PageView, "text_and_image.html", content: content)
+    Phoenix.Template.render_to_iodata(MtgwebWeb.PageHTML, "text_and_image", "html", content: content)
+    |> Phoenix.HTML.raw()
   end
 
   def render_section(%{features: content}) do
    # IO.inspect(label: "features", content: content)
-    Phoenix.View.render(MtgwebWeb.PageView, "features.html", content: content)
+    Phoenix.Template.render_to_iodata(MtgwebWeb.PageHTML, "features", "html", content: content)
+    |> Phoenix.HTML.raw()
   end
 
 
 
   def render_section(%{type: "testimonials"} = @testimonials) do
     # IO.inspect(label: "SCOTT DEBUG testimonials", list: @testimonials)
-     Phoenix.View.render(MtgwebWeb.PageView, "testimonial.html", list: @testimonials.content)
+     Phoenix.Template.render_to_iodata(MtgwebWeb.PageHTML, "testimonial", "html", list: @testimonials.content)
+     |> Phoenix.HTML.raw()
   end
 
   def render_section(_), do: ""

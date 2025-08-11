@@ -10,7 +10,8 @@ defmodule Mtgweb.MixProject do
       compilers: [] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      listeners: [Phoenix.CodeReloader]
     ]
   end
   # old   compilers: [:gettext] ++ Mix.compilers(),
@@ -33,27 +34,27 @@ defmodule Mtgweb.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.6.9"},
+      {:phoenix, "~> 1.8.0"},
       # scott {:phoenix_ecto, "~> 4.4"},
       #scott {:ecto_sql, "~> 3.6"},
      #scott  {:postgrex, ">= 0.0.0"},
-      {:phoenix_html, "~> 3.0"},
-      {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 0.17.5"},
+      {:phoenix_html, "~> 3.3"},
+      {:phoenix_live_reload, "~> 1.4", only: :dev},
+      {:phoenix_live_view, "~> 1.0.0"},
       {:floki, ">= 0.30.0", only: :test},
-      {:phoenix_live_dashboard, "~> 0.6"},
-      {:esbuild, "~> 0.4", runtime: Mix.env() == :dev},
-      {:swoosh, "~> 1.3"},
+      {:phoenix_live_dashboard, "~> 0.8"},
+      {:esbuild, "~> 0.8", runtime: Mix.env() == :dev},
+      {:swoosh, "~> 1.11"},
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_poller, "~> 1.0"},
-      {:gettext, "~> 0.18"},
-      {:jason, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"},
-      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
-      {:tesla, "~> 1.3"},
-      {:hackney, "~> 1.16.0"},
-      {:tailwind, "~> 0.3", runtime: Mix.env() == :dev},
-      {:earmark, "~> 1.4.25"}
+      {:gettext, "~> 0.20"},
+      {:jason, "~> 1.4"},
+      {:plug_cowboy, "~> 2.6"},
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:tesla, "~> 1.7"},
+      {:hackney, "~> 1.18"},
+      {:tailwind, "~> 0.2", runtime: Mix.env() == :dev},
+      {:earmark, "~> 1.4"}
 
 
     ]
