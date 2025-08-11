@@ -71,6 +71,10 @@ config :tailwind,
       ),
       cd: Path.expand("..", __DIR__)
     ]
+# scott tesla deprecation fix.  HANGE LATER
+
+
+config :tesla, disable_deprecated_builder_warning: true
 
 # scott airtable keys
 config :mtgweb, Services.Airtable,
