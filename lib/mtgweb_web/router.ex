@@ -20,6 +20,7 @@ defmodule MtgwebWeb.Router do
     live "/articles", ArticlesLive
 
     live "/articles/:id/:slug", ShowArticleLive
+    live "/new-client-form", NewClientFormLive
     get "/pricing", PageController, :pricing
     get "/contact", PageController, :contact
     get "/contactpricing", PageController, :contactpricing
