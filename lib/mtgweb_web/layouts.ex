@@ -83,7 +83,6 @@ defmodule MtgwebWeb.Layouts do
                   <div class="flex items-baseline space-x-6">
                     <a href="/team" class="text-white hover:text-orange-400 transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Our Team</a>
                     <a href="/contact" class="text-white hover:text-orange-400 transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Contact Us</a>
-                    <a href="/articles" class="text-white hover:text-orange-400 transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Learn More</a>
                   </div>
                   
                   <!-- CTA Button -->
@@ -117,7 +116,6 @@ defmodule MtgwebWeb.Layouts do
                 <a href="/pricing" class="block rounded-md px-3 py-2 text-xl font-medium text-white" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Pricing</a>
                 <a href="/team" class="block rounded-md px-3 py-2 text-xl font-medium text-white" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Our Team</a>
                 <a href="/contact" class="block rounded-md px-3 py-2 text-xl font-medium text-white" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Contact Us</a>
-                <a href="/articles" class="block rounded-md px-3 py-2 text-xl font-medium text-white" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Learn More</a>
                 <a href="/contact" class="block rounded-md px-3 py-2 text-xl font-medium bg-gradient-to-r from-orange-500 to-orange-600 text-white">Get Started</a>
               </div>
             </div>

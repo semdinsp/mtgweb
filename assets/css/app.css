@@ -100,6 +100,27 @@
     background-color: mtg-purple;
     @apply  text-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-200;
   }
+  
+  /* Custom font size adjustments */
+  .text-xl {
+    font-size: 1.5rem !important; /* Original 1.25rem + 4 points total (0.25rem) */
+    line-height: 2rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.75rem !important; /* Original 1.5rem + 3 points total (0.1875rem) */
+    line-height: 2.25rem;
+  }
+  
+  .trust-indicator {
+    font-size: 1.0625rem !important; /* text-sm (0.875rem) + 3 points (0.1875rem) */
+    line-height: 1.5rem;
+  }
+  
+  .text-sm {
+    font-size: 1.0rem !important; /* Original 0.875rem + 2 points (0.125rem) */
+    line-height: 1.5rem;
+  }
 }
 /* Alerts and form errors used by phx.new */
 .alert {

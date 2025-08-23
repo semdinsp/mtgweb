@@ -7,8 +7,8 @@
       <p class="mt-2 text-2xl font-semibold tracking-tight text-balance text-white sm:text-3xl">We have worked with hundreds of amazing people</p>
     </div>
   <!-- big quote -->
-    <figure class="rounded-2xl border-4 border-orange-400 shadow-lg sm:col-span-2 xl:col-start-2 xl:row-end-1" style="background-color: rgb(24, 7, 74);">
-        <blockquote class="p-6 text-lg tracking-tight text-white sm:p-12 sm:text-xl/8">
+    <figure class="rounded-2xl border-2 border-orange-400 shadow-lg sm:col-span-2 xl:col-start-2 xl:row-end-1" style="background-color: rgb(24, 7, 74);">
+        <blockquote class="p-6 text-xl tracking-tight text-white sm:p-12 sm:text-xl/8">
           <p>Michael has performed consulting work for our company here in Indonesia as well as our US based LLC in the United States for the past six years and has provided extremely valuable financial advice, planning and overall expertise that has greatly benefited us financially and professionally as a company and individually. I would highly recommend Michael as a knowledgeable and professional person who is a pleasure to work with.  (Michael was responsible for state, provincial and national taxes for a substantial Amazon product sales across US, Canada, Australia and other countries)
           </p>
         </blockquote>
@@ -26,14 +26,14 @@
 
 
 
-<div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-white sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+<div class="mx-auto mt-16 grid max-w-4xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-white sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-5xl xl:grid-flow-col xl:grid-cols-2">
 
 
 
      <%= for item <- @list do %>
 
-        <figure class="relative rounded-2xl p-6 border-4 border-orange-400 shadow-lg" style="background-color: rgb(24, 7, 74);">
-            <blockquote class="text-white">
+        <figure class="relative rounded-2xl p-6 border-2 border-orange-400 shadow-lg" style="background-color: rgb(24, 7, 74);">
+            <blockquote class="text-xl  tracking-tight text-white">
                 <p><%= item.title %></p>
             </blockquote>
             <figcaption class="mt-6 flex items-center gap-x-4">
