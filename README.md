@@ -36,6 +36,10 @@ Ready to run in production? Please [check our deployment guides]
 
 fly deploy
 
+# COLOR SCHEMES
+backgroud color rgb\(29, 9, 89\)", output_mode: "content")
+
+
 ## Learn more
 
   * Official website: https://www.phoenixframework.org/

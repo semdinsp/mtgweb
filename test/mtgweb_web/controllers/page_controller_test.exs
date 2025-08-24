@@ -300,8 +300,8 @@ defmodule MtgwebWeb.PageControllerTest do
         conn = get(conn, page)
         response = html_response(conn, 200)
         
-        # Check for purple background mentioned in design requirements
-        assert response =~ "rgb(29, 9, 89)" or response =~ "bg-primary-purple", "Page #{page} should have purple background"
+        # Check for purple background mentioned in design requirements (now using DaisyUI semantic classes)
+        assert response =~ "bg-primary" or response =~ "rgb(29, 9, 89)" or response =~ "bg-primary-purple", "Page #{page} should have purple background"
       end
     end
 

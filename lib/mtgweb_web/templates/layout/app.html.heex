@@ -1,4 +1,4 @@
-<main class="text-white" style="background-color: rgb(29, 9, 89); min-height: calc(100vh - 200px);">
+<main class="text-white bg-primary min-h-screen">
   <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
   <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
   <%= @inner_content %>

@@ -53,11 +53,11 @@ defmodule MtgwebWeb.Layouts do
 
         <script defer src="https://unpkg.com/alpinejs@3.14.9/dist/cdn.min.js"></script>
       </head>
-      <body data-theme="mtg" style="background-color: rgb(29, 9, 89); min-height: 100vh;">
-        <div class="min-h-full" style="background-color: rgb(29, 9, 89)">
-          <nav class="bg-mtg-purple" x-data="{ open: true }">
+      <body data-theme="mtg" class="bg-primary min-h-screen">
+        <div class="min-h-full bg-primary">
+          <nav class="bg-brand" x-data="{ open: true }">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div class="flex items-center justify-between h-16">
+              <div class="flex items-center justify-between h-20">
                 <!-- Left side - Logo and primary navigation -->
                 <div class="flex items-center">
                   <!-- Logo/Icon -->
@@ -70,9 +70,9 @@ defmodule MtgwebWeb.Layouts do
                   <!-- Primary Navigation (Left side) -->
                   <div class="hidden sm:ml-8 sm:block">
                     <div class="flex items-baseline space-x-6">
-                      <a href="/" class="text-white hover:text-orange-400 transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Home</a>
-                      <a href="/articles" class="text-white hover:text-orange-400 transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Our Services</a>
-                      <a href="/pricing" class="text-white hover:text-orange-400 transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Pricing</a>
+                      <a href="/" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">Home</a>
+                      <a href="/articles" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">Our Services</a>
+                      <a href="/pricing" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">Pricing</a>
                     </div>
                   </div>
                 </div>
@@ -81,8 +81,8 @@ defmodule MtgwebWeb.Layouts do
                 <div class="hidden sm:flex sm:items-center sm:space-x-6">
                   <!-- Secondary Navigation -->
                   <div class="flex items-baseline space-x-6">
-                    <a href="/team" class="text-white hover:text-orange-400 transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Our Team</a>
-                    <a href="/contact" class="text-white hover:text-orange-400 transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Contact Us</a>
+                    <a href="/team" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">Our Team</a>
+                    <a href="/contact" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">Contact Us</a>
                   </div>
                   
                   <!-- CTA Button -->
@@ -111,11 +111,11 @@ defmodule MtgwebWeb.Layouts do
             <!-- Mobile menu -->
             <div class="sm:hidden" id="mobile-menu" x-show="open">
               <div class="space-y-1 px-2 pt-2 pb-3">
-                <a href="/" class="block rounded-md px-3 py-2 text-xl font-medium text-white" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Home</a>
-                <a href="/articles" class="block rounded-md px-3 py-2 text-xl font-medium text-white" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Our Services</a>
-                <a href="/pricing" class="block rounded-md px-3 py-2 text-xl font-medium text-white" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Pricing</a>
-                <a href="/team" class="block rounded-md px-3 py-2 text-xl font-medium text-white" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Our Team</a>
-                <a href="/contact" class="block rounded-md px-3 py-2 text-xl font-medium text-white" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='rgb(255, 127, 8)'" onmouseout="this.style.color='rgb(255, 255, 255)'">Contact Us</a>
+                <a href="/" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Home</a>
+                <a href="/articles" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Our Services</a>
+                <a href="/pricing" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Pricing</a>
+                <a href="/team" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Our Team</a>
+                <a href="/contact" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Contact Us</a>
                 <a href="/contact" class="block rounded-md px-3 py-2 text-xl font-medium bg-gradient-to-r from-orange-500 to-orange-600 text-white">Get Started</a>
               </div>
             </div>
@@ -125,7 +125,7 @@ defmodule MtgwebWeb.Layouts do
         <%= @inner_content %>
         
         <!-- Footer -->
-        <footer style="background-color: rgb(29, 9, 89);" class="text-white py-12">
+        <footer class="bg-brand text-white py-8">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
               
@@ -165,7 +165,7 @@ defmodule MtgwebWeb.Layouts do
   # Manual function to render app layout
   def app(assigns) do
     ~H"""
-    <main class="text-white" style="background-color: rgb(29, 9, 89); min-height: calc(100vh - 200px);">
+    <main class="text-base-content bg-primary" style="min-height: calc(100vh - 200px);">
       <p class="alert alert-info" role="alert" :if={Phoenix.Flash.get(@flash, :info)}><%= Phoenix.Flash.get(@flash, :info) %></p>
       <p class="alert alert-danger" role="alert" :if={Phoenix.Flash.get(@flash, :error)}><%= Phoenix.Flash.get(@flash, :error) %></p>
       <%= @inner_content %>
