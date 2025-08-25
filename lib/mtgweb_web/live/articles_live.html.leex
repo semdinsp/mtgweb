@@ -1,9 +1,19 @@
 <%= if @articles  do %>
   <div class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center space-y-4 mb-16">
-          <h2 class="text-4xl lg:text-5xl font-bold" style="color: rgb(29, 9, 89) !important;">Our Services</h2>
-          <p class="text-xl max-w-3xl mx-auto" style="color: rgb(29, 9, 89) !important;">We provide full service accounting, cash flow management and management consulting for small and medium businesses.</p>
+      <div class="text-center space-y-8 mb-16">
+        <div class="space-y-4">
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight" style="color: rgb(29, 9, 89) !important;">
+            Our
+            <span class="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">
+              Services
+            </span>
+          </h1>
+          <p class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed" style="color: rgb(29, 9, 89) !important;">We provide full service accounting, cash flow management and management consulting for small and medium businesses.</p>
+        </div>
+        <div class="flex justify-center">
+          <div class="w-24 h-1 bg-gradient-to-r from-orange-400 to-orange-500 rounded-full"></div>
+        </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <%= for {article, counter } <- Enum.with_index(@articles)  , do: render_article(@socket, article, counter ) %>
