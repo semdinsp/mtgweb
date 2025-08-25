@@ -57,7 +57,7 @@ defmodule MtgwebWeb.Layouts do
         <div class="min-h-full bg-primary">
           <nav class="bg-brand" x-data="{ open: true }">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div class="flex items-center justify-between h-20">
+              <div class="flex items-center justify-between h-[90px]">
                 <!-- Left side - Logo and primary navigation -->
                 <div class="flex items-center">
                   <!-- Logo/Icon -->
