@@ -223,7 +223,7 @@ defmodule MtgwebWeb.PageControllerTest do
       
       assert response =~ "Complete Financial Solutions"
       assert response =~ "Bookkeeping & Accounting"
-      assert response =~ "CFO Services"
+      assert response =~ "CPA Guidance"
       assert response =~ "System Integration"
     end
 
@@ -232,7 +232,7 @@ defmodule MtgwebWeb.PageControllerTest do
       response = html_response(conn, 200)
       
       assert response =~ "Get Free Consultation"
-      assert response =~ "View Pricing"
+      assert response =~ "Learn More"
       assert response =~ "href=\"/contact\""
       assert response =~ "href=\"/pricing\""
     end
