@@ -3,16 +3,14 @@ defmodule MtgwebWeb.ErrorHelpers do
   Conveniences for translating and building error messages.
   """
 
-  use Phoenix.HTML
-
   @doc """
   Generates tag for inlined form input errors.
   """
   def error_tag(form, field) do
+    input = Phoenix.HTML.Form.input_name(form, field)
     Enum.map(Keyword.get_values(form.errors, field), fn error ->
-      content_tag(:span, translate_error(error),
-        class: "invalid-feedback",
-        phx_feedback_for: input_name(form, field)
+      Phoenix.HTML.raw(
+        ~s(<span class="invalid-feedback" phx-feedback-for="#{input}">#{translate_error(error)}</span>)
       )
     end)
   end

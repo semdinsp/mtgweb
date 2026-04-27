@@ -34,30 +34,28 @@ defmodule Mtgweb.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.8.1"},
+      {:phoenix, "~> 1.8.5"},
       # scott {:phoenix_ecto, "~> 4.4"},
       #scott {:ecto_sql, "~> 3.6"},
      #scott  {:postgrex, ">= 0.0.0"},
-      {:phoenix_html, "~> 3.3"},
-      {:phoenix_live_reload, "~> 1.4", only: :dev},
-      {:phoenix_live_view, "~> 1.1.0"},
+      {:phoenix_html, "~> 4.3"},
+      {:phoenix_live_reload, "~> 1.6", only: :dev},
+      {:phoenix_live_view, "~> 1.1"},
       {:floki, ">= 0.30.0", only: :test},
       {:lazy_html, ">= 0.1.0", only: :test},
-      {:phoenix_live_dashboard, "~> 0.8"},
-      {:esbuild, "~> 0.8", runtime: Mix.env() == :dev},
-      {:swoosh, "~> 1.11"},
+      {:phoenix_live_dashboard, "~> 0.8.7"},
+      {:esbuild, "~> 0.10", runtime: Mix.env() == :dev},
+      {:swoosh, "~> 1.25"},
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_poller, "~> 1.0"},
-      {:gettext, "~> 0.20"},
+      {:gettext, "~> 1.0"},
       {:jason, "~> 1.4"},
-      {:plug_cowboy, "~> 2.6"},
+      {:plug_cowboy, "~> 2.8"},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:tesla, "~> 1.7"},
+      {:tesla, "~> 1.17"},
       {:hackney, "~> 1.18"},
-      {:tailwind, "~> 0.2", runtime: Mix.env() == :dev},
+      {:tailwind, "~> 0.4", runtime: Mix.env() == :dev},
       {:earmark, "~> 1.4"}
-
-
     ]
   end
 
