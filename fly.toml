@@ -4,7 +4,7 @@
 #
 
 app = "mtgweb"
-primary_region = "sea"
+primary_region = "sjc"
 kill_signal = "SIGTERM"
 kill_timeout = "5s"
 
