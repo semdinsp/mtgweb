@@ -46,6 +46,13 @@ if config_env() == :prod do
       You can generate one by calling: mix phx.gen.secret
       """
 
+  personal_access_token =
+    System.get_env("PERSONAL_ACCESS_TOKEN") ||
+      raise "environment variable PERSONAL_ACCESS_TOKEN is missing."
+
+  config :mtgweb, Services.Airtable,
+    personal_access_token: personal_access_token
+
   host = System.get_env("PHX_HOST") || "example.com"
   port = String.to_integer(System.get_env("PORT") || "4000")
 

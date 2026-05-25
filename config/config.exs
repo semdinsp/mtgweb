@@ -76,11 +76,9 @@ config :tailwind,
 
 config :tesla, disable_deprecated_builder_warning: true
 
-# scott airtable keys
 config :mtgweb, Services.Airtable,
   base_id: "app62gxxiDB84TQSp",
-  api_url: "https://api.airtable.com/v0/",
-  personal_access_token: System.get_env("PERSONAL_ACCESS_TOKEN")
+  api_url: "https://api.airtable.com/v0/"
 
 config :mtgweb, Mtgweb.AirtableRepo, adapter: Mtgweb.AirtableRepo.Http
 
