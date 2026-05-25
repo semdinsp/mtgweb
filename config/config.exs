@@ -80,10 +80,12 @@ config :tesla, disable_deprecated_builder_warning: true
 config :mtgweb, Services.Airtable,
   base_id: "app62gxxiDB84TQSp",
   api_url: "https://api.airtable.com/v0/",
-  personal_access_token: "patkNHYbXLNH3BByc.7dce0b8a1bf49208f8a82fc8b7f7c99a2c982b2e89d7457cc3522d0d98f44286"
+  personal_access_token: System.get_env("PERSONAL_ACCESS_TOKEN")
 
-  config :mtgweb, Mtgweb.AirtableRepo, adapter: Mtgweb.AirtableRepo.Http
+config :mtgweb, Mtgweb.AirtableRepo, adapter: Mtgweb.AirtableRepo.Http
 
+# System.get_env("DATABASE_PASSWORD")
+# DELETE THIS: "patkNHYbXLNH3BByc.7dce0b8a1bf49208f8a82fc8b7f7c99a2c982b2e89d7457cc3522d0d98f44286"
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 # IO.puts(:stdio,"SCOTT: #{config_env()}.exs")
