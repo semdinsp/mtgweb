@@ -12,11 +12,11 @@
 #   - https://pkgs.org/ - resource for finding needed packages
 #   - Ex: hexpm/elixir:1.13.4-erlang-25.0-debian-bullseye-20210902-slim
 #
-ARG ELIXIR_VERSION=1.18.4
-ARG OTP_VERSION=27.2
+ARG ELIXIR_VERSION=1.19.4
+ARG OTP_VERSION=28.3
 ARG DEBIAN_VERSION=trixie-slim
 
-ARG BUILDER_IMAGE="elixir:${ELIXIR_VERSION}"
+ARG BUILDER_IMAGE="hexpm/elixir:${ELIXIR_VERSION}-erlang-${OTP_VERSION}-debian-${DEBIAN_VERSION}"
 ARG RUNNER_IMAGE="debian:${DEBIAN_VERSION}"
 
 FROM ${BUILDER_IMAGE} as builder
@@ -104,10 +104,6 @@ COPY --from=builder --chown=nobody:root /app/_build/${MIX_ENV}/rel/mtgweb ./
 USER nobody
 
 CMD ["/app/bin/server"]
-# Appended by flyctl
-ENV ECTO_IPV6 true
-ENV ERL_AFLAGS "-proto_dist inet6_tcp"
 
-# Appended by flyctl
 ENV ECTO_IPV6 true
 ENV ERL_AFLAGS "-proto_dist inet6_tcp"

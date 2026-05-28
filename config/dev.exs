@@ -85,3 +85,6 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
+
+config :mtgweb, Services.Airtable,
+  personal_access_token: System.get_env("PERSONAL_ACCESS_TOKEN")
