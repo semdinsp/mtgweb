@@ -28,3 +28,8 @@ config :logger, level: :warning
 
 # Initialize plugs at runtime for faster test compilation
 config :phoenix, :plug_init_mode, :runtime
+
+config :mtgweb, Services.Airtable,
+  personal_access_token: "test_token_placeholder"
+
+config :mtgweb, Mtgweb.AirtableRepo, adapter: Mtgweb.Repo.Fake

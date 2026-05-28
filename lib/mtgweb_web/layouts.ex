@@ -55,7 +55,7 @@ defmodule MtgwebWeb.Layouts do
       </head>
       <body data-theme="mtg" class="bg-primary min-h-screen">
         <div class="min-h-full bg-primary">
-          <nav class="bg-brand" x-data="{ open: true }">
+          <nav class="bg-brand" x-data="{ open: false }">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div class="flex items-center justify-between h-[90px]">
                 <!-- Left side - Logo and primary navigation -->
@@ -72,6 +72,7 @@ defmodule MtgwebWeb.Layouts do
                     <div class="flex items-baseline space-x-6">
                       <a href="/" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">Home</a>
                       <a href="/articles" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">Our Services</a>
+                      <a href="/ai-tools" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">AI Tools</a>
                       <a href="/pricing" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">Pricing</a>
                     </div>
                   </div>
@@ -113,6 +114,7 @@ defmodule MtgwebWeb.Layouts do
               <div class="space-y-1 px-2 pt-2 pb-3">
                 <a href="/" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Home</a>
                 <a href="/articles" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Our Services</a>
+                <a href="/ai-tools" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">AI Tools</a>
                 <a href="/pricing" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Pricing</a>
                 <a href="/team" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Our Team</a>
                 <a href="/contact" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Contact Us</a>

@@ -24,6 +24,6 @@ defmodule MtgwebWeb.ArticlesLiveTest do
     {:ok, view, _html} = live(conn, "/articles")
     
     # Ensure the LiveView is responsive
-    assert render(view) =~ "services"
+    assert render(view) =~ "Services"
   end
 end
