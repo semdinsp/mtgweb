@@ -160,7 +160,7 @@
     </div>
 
     <!-- CTA -->
-    <div class="text-center rounded-2xl p-12 border border-orange-500/30" style="background: rgb(24, 7, 74);">
+    <div class="text-center rounded-2xl p-12 border border-orange-500/30 mb-20" style="background: rgb(24, 7, 74);">
       <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to automate something?</h2>
       <p class="text-lg text-white/75 mb-8 max-w-2xl mx-auto">
         Every engagement starts with a free conversation. Tell us about a manual process that's eating your team's time
@@ -171,6 +171,185 @@
          style="background: rgb(255, 127, 8);">
         Book a Free Consultation
       </a>
+    </div>
+
+    <!-- Projects We've Built -->
+    <div class="mb-8">
+      <div class="text-center space-y-4 mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-white">
+          Projects We've
+          <span class="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">Built</span>
+        </h2>
+        <p class="text-lg text-white/75 max-w-2xl mx-auto">
+          Real applications delivered for real clients — each one purpose-built using Elixir, LiveView, and modern AI integrations.
+        </p>
+        <div class="flex justify-center">
+          <div class="w-24 h-1 bg-gradient-to-r from-orange-400 to-orange-500 rounded-full"></div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Project 1: Alzheimer Memory -->
+        <div class="rounded-2xl p-6 border border-orange-500/30 hover:border-orange-500/60 transition-all duration-200 hover:scale-[1.02] flex flex-col" style="background: rgb(24, 7, 74);">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgb(255, 127, 8);">
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15M14.25 3.104c.251.023.501.05.75.082M19.8 15l-1.575 1.759a2.25 2.25 0 01-1.683.741H7.458a2.25 2.25 0 01-1.683-.74L4.2 15m15.6 0l-5.64-3.191A2.25 2.25 0 0013.5 10.5h-3a2.25 2.25 0 00-1.06.309L3.6 15" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg leading-tight">Alzheimer Memory System</h3>
+              <span class="text-xs font-medium" style="color: rgb(255, 127, 8);">Healthcare</span>
+            </div>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-4 flex-grow">
+            System for displaying memories for Alzheimer patients — real-time family photo and memory sharing with a LiveView interface monitored via Prometheus Metrics and Grafana dashboards.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Elixir</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Phoenix LiveView</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Postgres</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Grafana</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">fly.io</span>
+          </div>
+          <a href="https://alzheimer-memory.com" target="_blank" rel="noopener" class="text-sm font-medium hover:underline" style="color: rgb(255, 127, 8);">
+            alzheimer-memory.com →
+          </a>
+        </div>
+
+        <!-- Project 2: NV Winery -->
+        <div class="rounded-2xl p-6 border border-orange-500/30 hover:border-orange-500/60 transition-all duration-200 hover:scale-[1.02] flex flex-col" style="background: rgb(24, 7, 74);">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgb(255, 127, 8);">
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg leading-tight">NV Winery</h3>
+              <span class="text-xs font-medium" style="color: rgb(255, 127, 8);">E-Commerce</span>
+            </div>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-4 flex-grow">
+            High-end wine e-commerce site built for a premium winery. Full online storefront with inventory management, powered by Airtable as the content backend.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Elixir</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Airtable</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">E-Commerce</span>
+          </div>
+          <a href="https://nv-winery.com" target="_blank" rel="noopener" class="text-sm font-medium hover:underline" style="color: rgb(255, 127, 8);">
+            nv-winery.com →
+          </a>
+        </div>
+
+        <!-- Project 3: Nursery Website -->
+        <div class="rounded-2xl p-6 border border-orange-500/30 hover:border-orange-500/60 transition-all duration-200 hover:scale-[1.02] flex flex-col" style="background: rgb(24, 7, 74);">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgb(255, 127, 8);">
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg leading-tight">Nursery Website</h3>
+              <span class="text-xs font-medium" style="color: rgb(255, 127, 8);">Retail</span>
+            </div>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-4 flex-grow">
+            Plant and nursery website for a natural and native plants retailer. Product catalogue and content management deployed on fly.io with Managed Postgres.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Elixir</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Managed Postgres</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">fly.io</span>
+          </div>
+          <a href="https://shelley-plants.fly.dev" target="_blank" rel="noopener" class="text-sm font-medium hover:underline" style="color: rgb(255, 127, 8);">
+            shelley-plants.fly.dev →
+          </a>
+        </div>
+
+        <!-- Project 4: Member Management -->
+        <div class="rounded-2xl p-6 border border-orange-500/30 hover:border-orange-500/60 transition-all duration-200 hover:scale-[1.02] flex flex-col" style="background: rgb(24, 7, 74);">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgb(255, 127, 8);">
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg leading-tight">Member Management</h3>
+              <span class="text-xs font-medium" style="color: rgb(255, 127, 8);">Set-Theoretic Reporting</span>
+            </div>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-4 flex-grow">
+            Membership platform for a large recreational association with set-theoretic reporting on member status — allowing union and intersection queries across membership tiers, dues, and activity.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Elixir</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Managed Postgres</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">fly.io</span>
+          </div>
+          <a href="https://members.bigrideaukeassociation.com" target="_blank" rel="noopener" class="text-sm font-medium hover:underline" style="color: rgb(255, 127, 8);">
+            bigrideaukeassociation.com →
+          </a>
+        </div>
+
+        <!-- Project 5: Modern Wine/NV Winery -->
+        <div class="rounded-2xl p-6 border border-orange-500/30 hover:border-orange-500/60 transition-all duration-200 hover:scale-[1.02] flex flex-col" style="background: rgb(24, 7, 74);">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgb(255, 127, 8);">
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg leading-tight">Modern Wine Club</h3>
+              <span class="text-xs font-medium" style="color: rgb(255, 127, 8);">E-Commerce + Inventory</span>
+            </div>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-4 flex-grow">
+            Full web site with e-commerce integration and live inventory management for a modern wine club. Airtable-backed content with real-time stock updates deployed on fly.io.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Elixir</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Airtable</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">E-Commerce</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">fly.io</span>
+          </div>
+          <a href="https://modernwineclub.com" target="_blank" rel="noopener" class="text-sm font-medium hover:underline" style="color: rgb(255, 127, 8);">
+            modernwineclub.com →
+          </a>
+        </div>
+
+        <!-- Project 6: Marenum / Donation -->
+        <div class="rounded-2xl p-6 border border-orange-500/30 hover:border-orange-500/60 transition-all duration-200 hover:scale-[1.02] flex flex-col" style="background: rgb(24, 7, 74);">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgb(255, 127, 8);">
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg leading-tight">Marenum Donation Platform</h3>
+              <span class="text-xs font-medium" style="color: rgb(255, 127, 8);">Non-Profit</span>
+            </div>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-4 flex-grow">
+            Donation website for a non-profit organisation with Stripe integration for secure online donations — streamlining fundraising and providing real-time contribution tracking.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Elixir</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Stripe</span>
+            <span class="px-2 py-1 rounded-md text-xs font-medium text-white/80" style="background: rgba(255,127,8,0.2);">Donations</span>
+          </div>
+          <a href="https://donation.marenum.com" target="_blank" rel="noopener" class="text-sm font-medium hover:underline" style="color: rgb(255, 127, 8);">
+            donation.marenum.com →
+          </a>
+        </div>
+
+      </div>
     </div>
 
   </div>
