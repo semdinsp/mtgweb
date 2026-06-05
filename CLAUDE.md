@@ -62,6 +62,11 @@ This is a Phoenix 1.6 LiveView application for MTG Consulting's website that ope
 - Uses Phoenix.PubSub for content update notifications
 
 ### Design System & Styling
+
+> **IMPORTANT**: Before making any visual or styling changes to the website, read `DESIGN.md` first.
+> It is the authoritative reference for colors, typography, buttons, cards, and component patterns.
+
+
 - **Color Scheme**: Purple/blue theme inspired by Framer design
   - Primary background: `rgb(29, 9, 89)` (main purple)
   - Secondary background: `rgb(24, 7, 74)` (darker purple for cards)

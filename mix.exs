@@ -5,7 +5,7 @@ defmodule Mtgweb.MixProject do
     [
       app: :mtgweb,
       version: "0.1.0",
-      elixir: "~> 1.18",
+      elixir: "~> 1.19",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
@@ -34,7 +34,7 @@ defmodule Mtgweb.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.8.5"},
+      {:phoenix, "~> 1.8.7"},
       # scott {:phoenix_ecto, "~> 4.4"},
       #scott {:ecto_sql, "~> 3.6"},
      #scott  {:postgrex, ">= 0.0.0"},
