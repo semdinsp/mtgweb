@@ -169,7 +169,7 @@
   </div>
 
   <%!-- CTA + FORM --%>
-  <section class="px-6 py-16 max-w-3xl mx-auto">
+  <section class="px-6 py-16 max-w-5xl mx-auto">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Free Amazon Financial Review</h2>
     <p class="text-white/75 text-center mb-10 text-lg leading-relaxed">
       During this 20-minute consultation we will discuss your current bookkeeping challenges,
@@ -177,7 +177,7 @@
     </p>
 
     <div class="rounded-2xl p-8 border border-orange-500/30 mb-10" style="background: rgb(24, 7, 74);">
-      <ul class="space-y-3 mb-8">
+      <ul class="space-y-3">
         <li class="flex items-center gap-3">
           <svg class="flex-shrink-0 w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
           <span class="text-white">Current bookkeeping challenges</span>
@@ -195,39 +195,25 @@
           <span class="text-white">Opportunities for improvement</span>
         </li>
       </ul>
-
-      <hr class="border-t border-orange-400/40 mb-8">
-
-      <div class="text-center mb-8">
-        <p class="font-bold text-white text-lg">Michael T. Grandinetti</p>
-        <p class="text-white/70 mb-4">Managing Director &amp; Founder</p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4 text-sm">
-          <a href="mailto:michael@mtg-consulting.net" class="text-orange-400 hover:text-orange-300 transition-colors duration-200">
-            michael@mtg-consulting.net
-          </a>
-          <span class="hidden sm:block text-white/30">|</span>
-          <a href="tel:5039314045" class="text-orange-400 hover:text-orange-300 transition-colors duration-200">
-            503-931-4045
-          </a>
-        </div>
-      </div>
-
-      <div class="mb-8">
-        <iframe
-          class="airtable-embed"
-          src="https://airtable.com/embed/app62gxxiDB84TQSp/pagfFFL9NmwefZnc3/form"
-          frameborder="0"
-          onmousewheel=""
-          width="100%"
-          height="533"
-          style="background: transparent; border: 1px solid rgba(255,127,8,0.4); border-radius: 12px;">
-        </iframe>
-      </div>
-
-      <p class="text-center text-white/50 text-sm">No obligation. No pressure.</p>
     </div>
+  </section>
 
-    <div class="text-center">
+  <%!-- Full-width form — matches /contact page layout --%>
+  <section style="background: rgb(29, 9, 89);">
+    <iframe
+      class="airtable-embed"
+      src="https://airtable.com/embed/app62gxxiDB84TQSp/pagfFFL9NmwefZnc3/form"
+      frameborder="0"
+      onmousewheel=""
+      width="100%"
+      height="600"
+      style="background: transparent; border: 1px solid rgba(255,127,8,0.3);">
+    </iframe>
+  </section>
+
+  <%!-- Button and contact details --%>
+  <section class="px-6 py-12 max-w-5xl mx-auto">
+    <div class="text-center mb-10">
       <a href="https://mtg-consulting.net/contact"
          class="inline-block text-white bg-gradient-to-r from-orange-500 to-orange-600
                 hover:from-orange-600 hover:to-orange-700
@@ -235,6 +221,20 @@
                 transition-all duration-200 transform hover:scale-105 shadow-lg">
         Request My Free Financial Review
       </a>
+    </div>
+
+    <div class="text-center">
+      <p class="font-bold text-white text-lg">Michael T. Grandinetti</p>
+      <p class="text-white/70 mb-4">Managing Director &amp; Founder</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 text-sm">
+        <a href="mailto:michael@mtg-consulting.net" class="text-orange-400 hover:text-orange-300 transition-colors duration-200">
+          michael@mtg-consulting.net
+        </a>
+        <span class="hidden sm:block text-white/30">|</span>
+        <a href="tel:5039314045" class="text-orange-400 hover:text-orange-300 transition-colors duration-200">
+          503-931-4045
+        </a>
+      </div>
     </div>
   </section>
 
