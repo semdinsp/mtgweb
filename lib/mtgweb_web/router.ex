@@ -31,6 +31,7 @@ defmodule MtgwebWeb.Router do
     get "/bio", PageController, :bio
     get "/terms", PageController, :terms
     get "/engagement", PageController, :engagement
+    get "/amazon-seller-bookkeeping", PageController, :amazon_seller_bookkeeping
     
     # SEO Routes
     get "/sitemap.xml", SitemapController, :index

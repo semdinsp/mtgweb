@@ -332,6 +332,85 @@ defmodule MtgwebWeb.PageControllerTest do
     end
   end
 
+  describe "Amazon Seller Bookkeeping page" do
+    test "GET /amazon-seller-bookkeeping returns 200", %{conn: conn} do
+      conn = get(conn, "/amazon-seller-bookkeeping")
+      assert html_response(conn, 200)
+    end
+
+    test "page has correct headline", %{conn: conn} do
+      conn = get(conn, "/amazon-seller-bookkeeping")
+      response = html_response(conn, 200)
+      assert response =~ "Amazon Seller Bookkeeping"
+      assert response =~ "True Profit"
+    end
+
+    test "page has all five sections", %{conn: conn} do
+      conn = get(conn, "/amazon-seller-bookkeeping")
+      response = html_response(conn, 200)
+      assert response =~ "Are You Really Making Money on Amazon?"
+      assert response =~ "What We Do"
+      assert response =~ "Why Work With Us"
+      assert response =~ "Free Amazon Financial Review"
+    end
+
+    test "page lists Amazon cost categories in problem section", %{conn: conn} do
+      conn = get(conn, "/amazon-seller-bookkeeping")
+      response = html_response(conn, 200)
+      assert response =~ "Amazon fees"
+      assert response =~ "PPC advertising"
+      assert response =~ "Returns"
+      assert response =~ "Storage charges"
+      assert response =~ "Inventory purchases"
+      assert response =~ "Operating expenses"
+    end
+
+    test "page lists all four services", %{conn: conn} do
+      conn = get(conn, "/amazon-seller-bookkeeping")
+      response = html_response(conn, 200)
+      assert response =~ "Monthly Bookkeeping"
+      assert response =~ "Financial Reporting"
+      assert response =~ "Profitability Analysis"
+      assert response =~ "QuickBooks Online Support"
+    end
+
+    test "page has contact info for Michael Grandinetti", %{conn: conn} do
+      conn = get(conn, "/amazon-seller-bookkeeping")
+      response = html_response(conn, 200)
+      assert response =~ "Michael T. Grandinetti"
+      assert response =~ "michael@mtg-consulting.net"
+      assert response =~ "503-931-4045"
+    end
+
+    test "page has Airtable form embed", %{conn: conn} do
+      conn = get(conn, "/amazon-seller-bookkeeping")
+      response = html_response(conn, 200)
+      assert response =~ "airtable-embed"
+      assert response =~ "airtable.com/embed"
+    end
+
+    test "page has CTA button linking to /contact", %{conn: conn} do
+      conn = get(conn, "/amazon-seller-bookkeeping")
+      response = html_response(conn, 200)
+      assert response =~ "Request My Free Financial Review"
+      assert response =~ "mtg-consulting.net/contact"
+    end
+
+    test "page has proper SEO meta tags", %{conn: conn} do
+      conn = get(conn, "/amazon-seller-bookkeeping")
+      response = html_response(conn, 200)
+      assert response =~ "Amazon Seller Bookkeeping"
+      assert response =~ "<meta name=\"description\""
+    end
+
+    test "page uses correct brand colors", %{conn: conn} do
+      conn = get(conn, "/amazon-seller-bookkeeping")
+      response = html_response(conn, 200)
+      assert response =~ "rgb(29, 9, 89)"
+      assert response =~ "orange"
+    end
+  end
+
   describe "Form and CTA Testing" do
     test "contact page has proper contact information", %{conn: conn} do
       conn = get(conn, "/contact")

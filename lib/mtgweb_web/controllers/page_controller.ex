@@ -58,6 +58,16 @@ defmodule MtgwebWeb.PageController do
     render(conn, "contactconsult.html")
   end
 
+  def amazon_seller_bookkeeping(conn, _params) do
+    conn
+    |> assign(:page_title, "Amazon Seller Bookkeeping | True Profit Reporting | MTG Consulting")
+    |> assign(:meta_description, "Monthly bookkeeping and financial reporting for Amazon sellers. Understand your true profit after fees, PPC, returns, and inventory costs. Free 20-minute review.")
+    |> assign(:og_title, "Amazon Seller Bookkeeping | MTG Consulting")
+    |> assign(:og_description, "Monthly bookkeeping and financial reporting designed for Amazon sellers who need accurate numbers to make better business decisions.")
+    |> assign(:og_url, "https://mtg-consulting.net/amazon-seller-bookkeeping")
+    |> render("amazon_seller_bookkeeping.html")
+  end
+
   def engagement(conn, _params) do
     conn
     |> assign(:page_title, "Engagement Terms | Professional CPA Services Process | MTG Consulting")
