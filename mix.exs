@@ -55,7 +55,8 @@ defmodule Mtgweb.MixProject do
       {:tesla, "~> 1.17"},
       {:hackney, "~> 1.18"},
       {:tailwind, "~> 0.4", runtime: Mix.env() == :dev},
-      {:earmark, "~> 1.4"}
+      {:earmark, "~> 1.4"},
+      {:html_sanitize_ex, "~> 1.4"}
     ]
   end
 

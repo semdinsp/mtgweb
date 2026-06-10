@@ -9,7 +9,7 @@ defmodule Services.Airtable do
     middleware = [
       {Tesla.Middleware.BaseUrl, api_url() <> base_id()},
       Tesla.Middleware.JSON,
-      Tesla.Middleware.Logger,
+      {Tesla.Middleware.Logger, filter_headers: ["authorization"]},
       {Tesla.Middleware.Headers, [{"authorization", "Bearer " <> personal_access_token()}]}
     ]
 
