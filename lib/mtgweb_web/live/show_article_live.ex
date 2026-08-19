@@ -3,9 +3,26 @@ defmodule MtgwebWeb.ShowArticleLive do
 
   @topic "articles"
 
+  # Static /services/* routes carry no :id param — they identify the
+  # article via the LiveView :action set in the router instead.
+  @service_ids %{
+    system_integration: "recMxe21SA4xycNka",
+    bank_financing: "recTwyAJRgHMAsHWd",
+    bookkeeping: "recaNeEc64Wq6kx0J",
+    clients: "recoZ4edVdxsIIlT0"
+  }
+
   @impl  Phoenix.LiveView
   def mount(%{"id" => id}, _session, socket) do
     MtgwebWeb.Endpoint.subscribe(@topic)
+
+    {:ok, assign_socket(socket, id)}
+  end
+
+  def mount(_params, _session, socket) do
+    MtgwebWeb.Endpoint.subscribe(@topic)
+
+    id = Map.fetch!(@service_ids, socket.assigns.live_action)
 
     {:ok, assign_socket(socket, id)}
   end

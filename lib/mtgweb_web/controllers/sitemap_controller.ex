@@ -28,6 +28,30 @@ defmodule MtgwebWeb.SitemapController do
         priority: 0.7
       },
       %{
+        loc: "https://mtg-consulting.net/services/system-integration",
+        lastmod: Date.utc_today(),
+        changefreq: "monthly",
+        priority: 0.7
+      },
+      %{
+        loc: "https://mtg-consulting.net/services/bank-financing",
+        lastmod: Date.utc_today(),
+        changefreq: "monthly",
+        priority: 0.7
+      },
+      %{
+        loc: "https://mtg-consulting.net/services/bookkeeping",
+        lastmod: Date.utc_today(),
+        changefreq: "monthly",
+        priority: 0.7
+      },
+      %{
+        loc: "https://mtg-consulting.net/services/clients",
+        lastmod: Date.utc_today(),
+        changefreq: "monthly",
+        priority: 0.7
+      },
+      %{
         loc: "https://mtg-consulting.net/contact",
         lastmod: Date.utc_today(),
         changefreq: "yearly",
