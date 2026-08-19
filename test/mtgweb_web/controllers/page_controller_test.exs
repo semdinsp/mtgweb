@@ -183,7 +183,7 @@ defmodule MtgwebWeb.PageControllerTest do
         
         # Check footer content
         assert response =~ "MTG Consulting", "Page #{page} should contain company name in footer"
-        assert response =~ "2025", "Page #{page} should contain copyright year"
+        assert response =~ to_string(DateTime.utc_now().year), "Page #{page} should contain copyright year"
         assert response =~ "Engagement Terms", "Page #{page} should contain engagement terms link"
         assert response =~ "michael@mtg-consulting.net", "Page #{page} should contain email contact"
       end
@@ -313,7 +313,7 @@ defmodule MtgwebWeb.PageControllerTest do
         response = html_response(conn, 200)
         
         assert response =~ "MTG Consulting", "Page #{page} should contain company name"
-        assert response =~ "2025", "Page #{page} should contain copyright year"
+        assert response =~ to_string(DateTime.utc_now().year), "Page #{page} should contain copyright year"
       end
     end
 

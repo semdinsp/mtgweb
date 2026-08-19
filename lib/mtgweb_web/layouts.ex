@@ -68,33 +68,38 @@ defmodule MtgwebWeb.Layouts do
                   </div>
                   
                   <!-- Primary Navigation (Left side) -->
-                  <div class="hidden sm:ml-8 sm:block">
-                    <div class="flex items-baseline space-x-6">
-                      <a href="/" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">Home</a>
-                      <a href="/articles" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">Our Services</a>
-                      <a href="/ai-tools" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">AI Tools</a>
-                      <a href="/pricing" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">Pricing</a>
+                  <div class="hidden lg:ml-8 lg:block">
+                    <div class="flex items-baseline space-x-4">
+                      <a href="/" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-[1.25rem] whitespace-nowrap">Home</a>
+                      <a href="/articles" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-[1.25rem] whitespace-nowrap">Our Services</a>
+                      <a href="/ai-tools" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-[1.25rem] whitespace-nowrap">AI Tools</a>
+                      <a href="/pricing" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-[1.25rem] whitespace-nowrap">Pricing</a>
                     </div>
                   </div>
                 </div>
 
                 <!-- Right side - Secondary navigation and CTA -->
-                <div class="hidden sm:flex sm:items-center sm:space-x-6">
+                <div class="hidden lg:flex lg:items-center lg:space-x-4">
                   <!-- Secondary Navigation -->
-                  <div class="flex items-baseline space-x-6">
-                    <a href="/team" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">Our Team</a>
-                    <a href="/contact" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-xl">Contact Us</a>
+                  <div class="flex items-baseline space-x-4">
+                    <a href="/team" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-[1.25rem] whitespace-nowrap">Our Team</a>
+                    <a href="/contact" class="text-base-content hover:text-secondary transition-colors duration-200 px-3 py-2 rounded-md font-display text-[1.25rem] whitespace-nowrap">Contact Us</a>
                   </div>
-                  
+
+                  <!-- Phone Number -->
+                  <a href="tel:5039314045" class="text-base-content hover:text-secondary transition-colors duration-200 font-display text-[1.25rem] whitespace-nowrap">
+                    503-931-4045
+                  </a>
+
                   <!-- CTA Button -->
-                  <div class="ml-6">
-                    <a href="/contact" class="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-2 px-6 rounded-full transition-all duration-200 text-sm shadow-lg hover:shadow-xl transform hover:scale-105">
+                  <div class="ml-4">
+                    <a href="/contact" class="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-2 px-6 rounded-full transition-all duration-200 text-sm shadow-lg hover:shadow-xl transform hover:scale-105 whitespace-nowrap inline-block">
                       Get Started
                     </a>
                   </div>
                 </div>
 
-                <div class="-mr-2 flex sm:hidden">
+                <div class="-mr-2 flex lg:hidden">
                   <button type="button" class="relative inline-flex items-center justify-center" @click="open = !open" aria-controls="mobile-menu" aria-expanded="open">
                     <span class="absolute -inset-0.5"></span>
                     <span class="sr-only">Open main menu</span>
@@ -108,9 +113,9 @@ defmodule MtgwebWeb.Layouts do
                 </div>
               </div>
             </div>
-        
+
             <!-- Mobile menu -->
-            <div class="sm:hidden" id="mobile-menu" x-show="open">
+            <div class="lg:hidden" id="mobile-menu" x-show="open">
               <div class="space-y-1 px-2 pt-2 pb-3">
                 <a href="/" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Home</a>
                 <a href="/articles" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Our Services</a>
@@ -119,6 +124,7 @@ defmodule MtgwebWeb.Layouts do
                 <a href="/team" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Our Team</a>
                 <a href="/contact" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Contact Us</a>
                 <a href="/contact" class="block rounded-md px-3 py-2 text-xl font-medium bg-gradient-to-r from-orange-500 to-orange-600 text-white">Get Started</a>
+                <a href="tel:5039314045" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">503-931-4045</a>
               </div>
             </div>
           </nav>
@@ -145,8 +151,11 @@ defmodule MtgwebWeb.Layouts do
                 </a>
               </div>
 
-              <!-- Right Side Email Button -->
-              <div>
+              <!-- Right Side Phone and Email -->
+              <div class="flex items-center space-x-4">
+                <a href="tel:5039314045" class="text-gray-300 hover:text-orange-400 transition-colors duration-200 text-sm">
+                  503-931-4045
+                </a>
                 <a href="mailto:michael@mtg-consulting.net" class="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-200 text-sm">
                   Email Us
                 </a>
@@ -155,7 +164,7 @@ defmodule MtgwebWeb.Layouts do
 
             <!-- Bottom Footer -->
             <div class="border-t border-gray-600 mt-8 pt-6 text-center">
-              <p class="text-gray-400 text-sm">&copy; 2025 MTG Consulting. All rights reserved.</p>
+              <p class="text-gray-400 text-sm">&copy; <%= DateTime.utc_now().year %> MTG Consulting. All rights reserved.</p>
             </div>
           </div>
         </footer>
