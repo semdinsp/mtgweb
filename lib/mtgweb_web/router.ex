@@ -19,7 +19,25 @@ defmodule MtgwebWeb.Router do
     live "/", PageLive
     live "/articles", ArticlesLive
 
+    # 301 redirects from the old CMS-id article URLs to the new clean
+    # /services/* paths. Must be declared before the dynamic
+    # /articles/:id/:slug route below, or that catch-all would shadow
+    # these literal matches and the redirects would never fire.
+    get "/articles/recMxe21SA4xycNka/sw-dev", RedirectController, :system_integration
+    get "/articles/recTwyAJRgHMAsHWd/bank-financing", RedirectController, :bank_financing
+    get "/articles/recaNeEc64Wq6kx0J/book-keeping-svcs", RedirectController, :bookkeeping
+    get "/articles/recoZ4edVdxsIIlT0/clients", RedirectController, :clients
+
     live "/articles/:id/:slug", ShowArticleLive
+
+    # Clean, descriptive URLs for the four service pages (CMS-backed via
+    # ShowArticleLive, same as /articles/:id/:slug, but with a stable,
+    # human-readable path instead of the raw Airtable record id).
+    live "/services/system-integration", ShowArticleLive, :system_integration
+    live "/services/bank-financing", ShowArticleLive, :bank_financing
+    live "/services/bookkeeping", ShowArticleLive, :bookkeeping
+    live "/services/clients", ShowArticleLive, :clients
+
     live "/ai-tools", AiToolsLive
     live "/new-client-form", NewClientFormLive
     get "/pricing", PageController, :pricing

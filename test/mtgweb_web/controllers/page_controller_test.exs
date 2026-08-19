@@ -83,6 +83,22 @@ defmodule MtgwebWeb.PageControllerTest do
     assert redirected_to(conn, 301) == "/team"
   end
 
+  describe "Service page redirects" do
+    test "old CMS article URLs 301 to the new clean /services/* paths", %{conn: conn} do
+      assert redirected_to(get(conn, "/articles/recMxe21SA4xycNka/sw-dev"), 301) ==
+               "/services/system-integration"
+
+      assert redirected_to(get(conn, "/articles/recTwyAJRgHMAsHWd/bank-financing"), 301) ==
+               "/services/bank-financing"
+
+      assert redirected_to(get(conn, "/articles/recaNeEc64Wq6kx0J/book-keeping-svcs"), 301) ==
+               "/services/bookkeeping"
+
+      assert redirected_to(get(conn, "/articles/recoZ4edVdxsIIlT0/clients"), 301) ==
+               "/services/clients"
+    end
+  end
+
   describe "Contact Us page" do
     test "GET /contact", %{conn: conn} do
       conn = get(conn, "/contact")
