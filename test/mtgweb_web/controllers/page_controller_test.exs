@@ -78,9 +78,9 @@ defmodule MtgwebWeb.PageControllerTest do
     end
   end
 
-  test "GET /bio", %{conn: conn} do
+  test "GET /bio redirects to /team", %{conn: conn} do
     conn = get(conn, "/bio")
-    assert html_response(conn, 200) =~ "Michael Grandinetti"
+    assert redirected_to(conn, 301) == "/team"
   end
 
   describe "Contact Us page" do

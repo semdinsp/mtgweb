@@ -28,7 +28,7 @@ defmodule MtgwebWeb.Router do
     get "/contactconsult", PageController, :contactconsult
 
     get "/team", PageController, :team
-    get "/bio", PageController, :bio
+    get "/bio", RedirectController, :bio_to_team
     get "/terms", PageController, :terms
     get "/engagement", PageController, :engagement
     get "/amazon-seller-bookkeeping", PageController, :amazon_seller_bookkeeping

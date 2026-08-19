@@ -25,11 +25,6 @@ defmodule MtgwebWeb.PageController do
     |> render("team.html")
   end
 
-  def bio(conn, _params) do
-    # mike's bio
-    render(conn, "bio.html")
-  end
-
   def terms(conn, _params) do
     conn
     |> assign(:page_title, "Terms of Service - MTG Consulting")
