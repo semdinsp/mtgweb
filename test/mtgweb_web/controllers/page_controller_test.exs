@@ -54,10 +54,10 @@ defmodule MtgwebWeb.PageControllerTest do
       conn = get(conn, "/team")
       response = html_response(conn, 200)
       
-      assert response =~ "CPA Team"
-      assert response =~ "Small Business QuickBooks Experts"
-      assert response =~ "Certified Accountants"
-      assert response =~ "20+ years experience"
+      assert response =~ "Meet Our Team"
+      assert response =~ "CPA, Data Science &amp; Tech Integration Experts"
+      assert response =~ "Michael Grandinetti Jr"
+      assert response =~ "Scott Sproule"
     end
 
     test "team page displays team member information", %{conn: conn} do
