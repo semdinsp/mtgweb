@@ -123,7 +123,7 @@ defmodule MtgwebWeb.Layouts do
                 <a href="/pricing" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Pricing</a>
                 <a href="/team" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Our Team</a>
                 <a href="/contact" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">Contact Us</a>
-                <a href="/contact" class="block rounded-md px-3 py-2 text-xl font-medium bg-gradient-to-r from-orange-500 to-orange-600 text-white">Get Started</a>
+                <a href="/contact" class="block rounded-md px-3 py-2 text-xl font-medium bg-gradient-to-r from-orange-500 to-orange-600 text-white">Get Free Consultation</a>
                 <a href="tel:5039314045" class="block rounded-md px-3 py-2 text-xl font-medium text-base-content hover:text-secondary transition-colors">503-931-4045</a>
               </div>
             </div>

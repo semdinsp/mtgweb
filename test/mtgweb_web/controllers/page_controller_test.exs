@@ -439,8 +439,11 @@ defmodule MtgwebWeb.PageControllerTest do
     test "pricing page has proper CTA buttons", %{conn: conn} do
       conn = get(conn, "/pricing")
       response = html_response(conn, 200)
-      
-      assert response =~ "Learn More"
+
+      assert response =~ "Choose Basic"
+      assert response =~ "Choose Enhanced"
+      assert response =~ "Choose Comprehensive"
+      assert response =~ "Get Free Consultation"
       assert response =~ "href=" # Should have clickable links
     end
   end
