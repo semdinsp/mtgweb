@@ -1,7 +1,7 @@
 <%= if @articles  do %>
-  <div class="py-16 lg:py-24 min-h-screen" style="background: rgb(29, 9, 89);">
+  <div class="py-16 lg:py-24" style="background: rgb(29, 9, 89);">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center space-y-8 mb-16">
+      <div class="text-center space-y-8">
         <div class="space-y-4">
           <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-white">
             Our
@@ -15,6 +15,10 @@
           <div class="w-24 h-1 bg-gradient-to-r from-orange-400 to-orange-500 rounded-full"></div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="py-16 lg:py-24 min-h-screen bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <%= for {article, counter } <- Enum.with_index(@articles)  , do: render_article(@socket, article, counter ) %>
       </div>
