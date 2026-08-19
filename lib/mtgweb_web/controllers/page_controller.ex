@@ -17,10 +17,10 @@ defmodule MtgwebWeb.PageController do
 
   def team(conn, _params) do
     conn
-    |> assign(:page_title, "CPA Team | Small Business QuickBooks Experts | Certified Accountants")
-    |> assign(:meta_description, "Expert CPA team specializing in small business accounting and QuickBooks consulting. Certified accountants with 20+ years experience in financial management.")
-    |> assign(:og_title, "CPA Team | Small Business QuickBooks Experts")
-    |> assign(:og_description, "Expert CPA team specializing in small business accounting and QuickBooks consulting. Led by Michael Grandinetti, former Deloitte partner.")
+    |> assign(:page_title, "Meet Our Team | CPA, Data Science & Tech Integration Experts")
+    |> assign(:meta_description, "Meet the MTG Consulting team: former Deloitte partner Michael Grandinetti (CPA), data scientist Michael Grandinetti Jr., and technologist Scott Sproule — accounting, analytics, and systems under one roof.")
+    |> assign(:og_title, "Meet Our Team | CPA, Data Science & Tech Integration Experts")
+    |> assign(:og_description, "Meet the MTG Consulting team: former Deloitte partner Michael Grandinetti (CPA), data scientist Michael Grandinetti Jr., and technologist Scott Sproule — accounting, analytics, and systems under one roof.")
     |> assign(:og_url, "https://mtg-consulting.net/team")
     |> render("team.html")
   end
