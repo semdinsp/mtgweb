@@ -18,7 +18,7 @@ defmodule MtgwebWeb.PageControllerTest do
       response = html_response(conn, 200)
       
       assert response =~ "Small Business Accounting Cost"
-      assert response =~ "CPA Services Pricing"
+      assert response =~ "Bookkeeping Services Pricing"
       assert response =~ "QuickBooks"
       assert response =~ "$250/month"
     end
@@ -55,7 +55,7 @@ defmodule MtgwebWeb.PageControllerTest do
       response = html_response(conn, 200)
       
       assert response =~ "Meet Our Team"
-      assert response =~ "CPA, Data Science &amp; Tech Integration Experts"
+      assert response =~ "Accounting, Data Science &amp; Tech Integration Experts"
       assert response =~ "Michael Grandinetti Jr"
       assert response =~ "Scott Sproule"
     end
@@ -63,9 +63,9 @@ defmodule MtgwebWeb.PageControllerTest do
     test "team page displays team member information", %{conn: conn} do
       conn = get(conn, "/team")
       response = html_response(conn, 200)
-      
+
       assert response =~ "Michael Grandinetti"
-      assert response =~ "CPA"
+      assert response =~ "Former Partner, Deloitte"
       assert response =~ "Managing Partner"
     end
 
@@ -110,7 +110,7 @@ defmodule MtgwebWeb.PageControllerTest do
       conn = get(conn, "/contact")
       response = html_response(conn, 200)
       
-      assert response =~ "Free CPA Consultation"
+      assert response =~ "Free Accounting Consultation"
       assert response =~ "Small Business QuickBooks Help"
       assert response =~ "Contact MTG"
       assert response =~ "(503) 931-4045"
@@ -239,7 +239,7 @@ defmodule MtgwebWeb.PageControllerTest do
       
       assert response =~ "Complete Financial Solutions"
       assert response =~ "Bookkeeping & Accounting"
-      assert response =~ "CPA Guidance"
+      assert response =~ "Financial Guidance"
       assert response =~ "System Integration"
     end
 

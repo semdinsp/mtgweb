@@ -7,20 +7,20 @@ defmodule MtgwebWeb.PageController do
 
   def pricing(conn, _params) do
     conn
-    |> assign(:page_title, "Small Business Accounting Cost | CPA Services Pricing | QuickBooks")
-    |> assign(:meta_description, "Small business accounting cost from $250/month. Transparent CPA services pricing for QuickBooks consulting, bookkeeping, and CFO services. No hidden fees.")
-    |> assign(:og_title, "Small Business Accounting Cost | CPA Services Pricing")
-    |> assign(:og_description, "Small business accounting cost from $250/month. Transparent CPA services pricing for QuickBooks consulting and bookkeeping.")
+    |> assign(:page_title, "Small Business Accounting Cost | Bookkeeping Services Pricing | QuickBooks")
+    |> assign(:meta_description, "Small business accounting cost from $250/month. Transparent bookkeeping services pricing for QuickBooks consulting, bookkeeping, and CFO services. No hidden fees.")
+    |> assign(:og_title, "Small Business Accounting Cost | Bookkeeping Services Pricing")
+    |> assign(:og_description, "Small business accounting cost from $250/month. Transparent bookkeeping services pricing for QuickBooks consulting and bookkeeping.")
     |> assign(:og_url, "https://mtg-consulting.net/pricing")
     |> render("pricing.html")
   end
 
   def team(conn, _params) do
     conn
-    |> assign(:page_title, "Meet Our Team | CPA, Data Science & Tech Integration Experts")
-    |> assign(:meta_description, "Meet the MTG Consulting team: former Deloitte partner Michael Grandinetti (CPA), data scientist Michael Grandinetti Jr., and technologist Scott Sproule — accounting, analytics, and systems under one roof.")
-    |> assign(:og_title, "Meet Our Team | CPA, Data Science & Tech Integration Experts")
-    |> assign(:og_description, "Meet the MTG Consulting team: former Deloitte partner Michael Grandinetti (CPA), data scientist Michael Grandinetti Jr., and technologist Scott Sproule — accounting, analytics, and systems under one roof.")
+    |> assign(:page_title, "Meet Our Team | Accounting, Data Science & Tech Integration Experts")
+    |> assign(:meta_description, "Meet the MTG Consulting team: former Deloitte partner Michael Grandinetti, data scientist Michael Grandinetti Jr., and technologist Scott Sproule — accounting, analytics, and systems under one roof.")
+    |> assign(:og_title, "Meet Our Team | Accounting, Data Science & Tech Integration Experts")
+    |> assign(:og_description, "Meet the MTG Consulting team: former Deloitte partner Michael Grandinetti, data scientist Michael Grandinetti Jr., and technologist Scott Sproule — accounting, analytics, and systems under one roof.")
     |> assign(:og_url, "https://mtg-consulting.net/team")
     |> render("team.html")
   end
@@ -37,10 +37,10 @@ defmodule MtgwebWeb.PageController do
 
   def contact(conn, _params) do
     conn
-    |> assign(:page_title, "Free CPA Consultation | Small Business QuickBooks Help | Contact MTG")
-    |> assign(:meta_description, "Free CPA consultation for small businesses. Get expert QuickBooks help and accounting advice. Call (503) 931-4045 or email for your free consultation today.")
-    |> assign(:og_title, "Free CPA Consultation | Small Business QuickBooks Help")
-    |> assign(:og_description, "Free CPA consultation for small businesses. Get expert QuickBooks help and accounting advice from certified professionals.")
+    |> assign(:page_title, "Free Accounting Consultation | Small Business QuickBooks Help | Contact MTG")
+    |> assign(:meta_description, "Free accounting consultation for small businesses. Get expert QuickBooks help and accounting advice. Call (503) 931-4045 or email for your free consultation today.")
+    |> assign(:og_title, "Free Accounting Consultation | Small Business QuickBooks Help")
+    |> assign(:og_description, "Free accounting consultation for small businesses. Get expert QuickBooks help and accounting advice from experienced professionals.")
     |> assign(:og_url, "https://mtg-consulting.net/contact")
     |> render("contact.html")
   end
@@ -65,9 +65,9 @@ defmodule MtgwebWeb.PageController do
 
   def engagement(conn, _params) do
     conn
-    |> assign(:page_title, "Engagement Terms | Professional CPA Services Process | MTG Consulting")
-    |> assign(:meta_description, "Simple engagement process and terms for MTG Consulting CPA services. Quality guarantee, flexible billing cycles, and clear requirements discussion process.")
-    |> assign(:og_title, "Engagement Terms | Professional CPA Services Process")
+    |> assign(:page_title, "Engagement Terms | Professional Accounting Services Process | MTG Consulting")
+    |> assign(:meta_description, "Simple engagement process and terms for MTG Consulting accounting services. Quality guarantee, flexible billing cycles, and clear requirements discussion process.")
+    |> assign(:og_title, "Engagement Terms | Professional Accounting Services Process")
     |> assign(:og_description, "Learn about our simple engagement process, quality guarantee, and flexible billing options for professional accounting services.")
     |> assign(:og_url, "https://mtg-consulting.net/engagement")
     |> render("engagement.html")

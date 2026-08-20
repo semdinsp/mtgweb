@@ -66,10 +66,10 @@ defmodule MtgwebWeb.PageLive do
     case fetch_contents() do
       {:ok, contents} ->
         socket
-        |> assign(:page_title, "Small Business CPA & QuickBooks Consulting | Free Consultation | MTG")
-        |> assign(:meta_description, "Professional CPA and QuickBooks consulting for small businesses. Expert accounting, bookkeeping, and CFO services starting at $250/month. Free consultation available.")
-        |> assign(:og_title, "Small Business CPA & QuickBooks Consulting | MTG Consulting")
-        |> assign(:og_description, "Professional CPA and QuickBooks consulting for small businesses. Free consultation available. Trusted by 100+ companies nationwide.")
+        |> assign(:page_title, "Small Business Accounting & QuickBooks Consulting | Free Consultation | MTG")
+        |> assign(:meta_description, "Professional accounting and QuickBooks consulting for small businesses. Expert bookkeeping, financial strategy, and CFO services starting at $250/month. Free consultation available.")
+        |> assign(:og_title, "Small Business Accounting & QuickBooks Consulting | MTG Consulting")
+        |> assign(:og_description, "Professional accounting and QuickBooks consulting for small businesses. Free consultation available. Trusted by 100+ companies nationwide.")
         |> assign(:og_url, "https://mtg-consulting.net")
         |> assign(:contents, contents)
         |> put_flash(:error, nil)

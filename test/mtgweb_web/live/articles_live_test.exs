@@ -16,7 +16,7 @@ defmodule MtgwebWeb.ArticlesLiveTest do
     
     # Check SEO meta tags
     assert html =~ "Small Business Accounting Services"
-    assert html =~ "CPA &amp; QuickBooks Solutions"
+    assert html =~ "Bookkeeping &amp; QuickBooks Solutions"
     assert html =~ "Expert small business accounting services"
   end
 
